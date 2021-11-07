@@ -623,7 +623,7 @@ footer h5 p{
 /*PRODUCTOS**********************************************************************/
 
 
-/*navmenu*/
+/*Contenedor general************************/
 .productosContenedor{
     display: flex;
     flex-direction: row;
@@ -632,28 +632,50 @@ footer h5 p{
     justify-content: space-between;
 }
 
-
-.cajaMenu{
+/*navmenu************/
+.cajaMenuIzq{
     display: flex;
     flex-direction: row;
-    width: 170px;
-    height: 500px;
+    width: 200px;
+    height: auto;
     margin-top: 10%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: rgba(191, 85, 124, .3);
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding-top: 1.5%;
 }
-.textoMenu{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    padding-left: 15px;
-    padding-top: 15px;
+.contenedorMenu{
+    display:inline-block;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+.textoMenuIzq{
+    width: 100%;
+    color: white;    
     font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;    
 }
 
-/*listado c/imagenes*/
+/*listado c/imagenes********/
+
+
+.cajaMenuDer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.textoDondeEstoy{
+
+}
 .cajaProductos{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -661,8 +683,6 @@ footer h5 p{
     grid-column-gap: 50px;
     grid-row-gap: 75px;
     height:auto;
-    margin-top: 10%;
-    margin-right: 3%;
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 3px;
