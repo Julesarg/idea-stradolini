@@ -663,7 +663,7 @@ footer h5 p{
     display: block;    
 }
 
-/*listado c/imagenes********/
+/*listado c/imagenes******************/
 
 
 .cajaMenuDer{
@@ -673,9 +673,27 @@ footer h5 p{
     margin-top: 10%;
 }
 
-.textoDondeEstoy{
-
+.cajaTextoDondeEstoy{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 5px;
 }
+.textoDondeEstoy{
+    display: inline-block;   
+    color: black;
+    opacity: 0.3;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 5px;
+    transition: .3s;
+}
+.cajaTextoDondeEstoy :hover {
+    opacity: 0.5;
+}
+
 .cajaProductos{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -684,7 +702,7 @@ footer h5 p{
     grid-row-gap: 75px;
     height:auto;
     border-top-style: solid;
-    border-top-color: black;
+    border-top-color: rgba(0, 0, 0, .3);
     border-top-width: 3px;
     padding-top: 2%;
     padding-right: 15%;
