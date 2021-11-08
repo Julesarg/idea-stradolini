@@ -2,9 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
-
 body { 
     display: flex; 
     flex-flow: column;
@@ -632,13 +631,15 @@ footer h5 p{
     justify-content: space-between;
 }
 
+/*LADO IZQUIERDO*/
+
 /*navmenu************/
 .cajaMenuIzq{
     display: flex;
     flex-direction: row;
-    width: 200px;
-    height: auto;
-    margin-top: 10%;
+    width: 175px;
+    height: 350px;
+    margin-top: 15%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: rgba(191, 85, 124, .3);
@@ -663,9 +664,9 @@ footer h5 p{
     display: block;    
 }
 
-/*listado c/imagenes******************/
+/*LADO DERECHO*/
 
-
+/*TEXTO*/
 .cajaMenuDer{
     display: flex;
     flex-direction: column;
@@ -694,18 +695,19 @@ footer h5 p{
     opacity: 0.5;
 }
 
+/*ITEMS*/
 .cajaProductos{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
-    grid-column-gap: 50px;
+    grid-column-gap: 75px;
     grid-row-gap: 75px;
     height:auto;
     border-top-style: solid;
     border-top-color: rgba(0, 0, 0, .3);
     border-top-width: 3px;
     padding-top: 2%;
-    padding-right: 15%;
+    padding-right: 18%;
 }
 .imagenProductoListado{
     width: 275px;
