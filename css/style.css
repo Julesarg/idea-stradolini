@@ -621,6 +621,13 @@ footer h5 p{
 
 /*PRODUCTOS**********************************************************************/
 
+.bannerFondoProductos{
+    background-image: url(../images/productos/fondoproductos.png);
+    width: 100%;
+    height: 800px;
+    margin-top: 2%;
+}
+
 
 /*Contenedor general************************/
 .productosContenedor{
