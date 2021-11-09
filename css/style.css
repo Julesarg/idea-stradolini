@@ -58,6 +58,7 @@ nav ul li img{
     bottom: 45px;
     width: 200px;
     height: 200px;
+    z-index: 1;
 }
 nav ul li a{
     font-size: 1.5rem;
@@ -623,8 +624,6 @@ footer h5 p{
 
 /*banner superior*/
 
-
-
 .bannerFondoProductos{
     width: 100%;
     height: 800px;
@@ -632,8 +631,6 @@ footer h5 p{
     display: flex;
     justify-content: space-between;
 }
-
-
 .bannerFoto1{
     animation-name: foto1;
     animation-iteration-count: 1;
@@ -740,23 +737,14 @@ footer h5 p{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-/*Contenedor general************************/
+/*Contenedor general nav y productos************************/
 .productosContenedor{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
     justify-content: space-between;
+    align-items:flex-start;
 }
 
 /*LADO IZQUIERDO*/
@@ -766,8 +754,7 @@ footer h5 p{
     display: flex;
     flex-direction: row;
     width: 175px;
-    height: 350px;
-    margin-top: 15%;
+    height: 800px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: rgba(191, 85, 124, .3);
@@ -799,7 +786,6 @@ footer h5 p{
     display: flex;
     flex-direction: column;
     margin-right: 10%;
-    margin-top: 10%;
 }
 
 .cajaTextoDondeEstoy{
