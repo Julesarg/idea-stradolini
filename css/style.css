@@ -96,12 +96,16 @@ nav ul li a{
 }
 
 /*SLIDESHOW INDEX*********************************************************/
-.slideshow{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    width: 100%;
+
+
+
+.d-block{
 }
+.carousel-inner{
+    width: 100%;
+    justify-content: center;
+}
+
 
 /*BANNER PROMOCIONAL INDEX ***********************************************/
 .banner{
