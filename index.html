@@ -4,38 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;600;700;900&display=swap" rel="stylesheet">
+    <!--efecto de materia prima y envios-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css bootrstrap -->
+    <link href="./css/bootstrap.css">
+   <!--favicon-->
     <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64">
-    <link rel="stylesheet" href="./css/style.css">   
+    <!--estilos personales de web-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--titulo-->      
     <title>Rumapets Rascadores</title>
 </head>
+
+<!--------------------------------------BODY----------------------------------------------------------------->
+
 <body>
+<!-----------------------HEADER------------------------>
     <header>
         <section class="cajaHeaderSuperior">
             <b class="textoHeaderSuperior">rascadores - descansos</b>
         </section>  
     </header>
-<section class="fondoHuellas">
+<!--------------fin de header-------------------------->
+
+    <section class="fondoHuellas">
+        
+<!-----------------------NAVBAR----------------------->    
     <nav>
         <ul>
             <li class="cajaNavBar"><a href="index.html" class="textoNavBar" >inicio</a></li>
             <li class="cajaNavBar"><a href="./pages/productos.html"class="textoNavBar">productos</a></li>
             <li class="cajaNavBar"><img src="./images/logo/logo.png"alt="logo" class="logoAnimacion"></li>
             <li class="cajaNavBar"><a href="./pages/clientes.html" class="textoNavBar">clientes</a></li>
-             <li class="cajaNavBar"><a href="./pages/nosotros.html" class="textoNavBar">nosotros</a></li>
+            <li class="cajaNavBar"><a href="./pages/nosotros.html" class="textoNavBar">nosotros</a></li>
         </ul>
     </nav>
-    
+<!--------------------fin de navbar------------------->
+
+<!--------------------SLIDESHOW----------------------->    
     <div class="slideshow">
         <img src="./images/Slideshow/fotomuestra2.png" alt="foto1">
     </div>
+<!-----------------FIN del slideshow------------------>
+
+ <!----------------BANNER PROMO----------------------->
     <div class="banner">
         <img src="./images/banner/banner.png" alt="promooctubre">   
     </div>
+<!----------------fin de banner promo----------------->
 
+<!-------------------MATERIA PRIMA-------------------->
     <section class="cajaMatPrima">
         <h2>
             Nuestra materia prima
@@ -65,7 +87,9 @@
             </div>
         </div>
     </section>
+<!------------fin de materia prima-------------------->
 
+<!---------------PAGOS Y ENVIOS----------------------->
     <section class="cajaPagoYenvios">
         <h2>
             Abona con cualquier forma de pago
@@ -80,7 +104,7 @@
             <div><img src="./images/pagosyenvios/transferencia.png" alt="transferenciabancaria" class="imgMdp"></div>
         </section>
     </section>
-
+    
     <section class="cajaPagoYenvios">
         <h2>
             Retiralo o recibilo en tu domicilio
@@ -92,7 +116,9 @@
             <img src="./images/pagosyenvios/viacargo.png" alt="efectivo" class="imgMdp">
         </section>
     </section>
+<!------------fin de pagos y envios------------------->
 
+<!-------------------FOOTER--------------------------->
     <footer>    
         <section class="cajaGde">
             <section class="cajaIzq">
@@ -130,13 +156,18 @@
             </section>
         </section>
         <h5>
-            <p>Copyright® 2021 RUMAPETS. Todos los derechos reservados</p>
+            <p class="copyRight">Copyright® 2021 RUMAPETS. Todos los derechos reservados</p>
         </h5>
     </footer>
+<!---------------fin de footer----------------------->
+
 </section>
+
+
+<!--SCRIPTS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+<script>AOS.init();</script>
+<script src="./js/bootstrap.js"></script>
+
 </body>
 </html>
