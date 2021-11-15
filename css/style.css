@@ -1,4 +1,4 @@
-/* REGLA GENERAL DE TODO EL CUERPO */
+/* REGLAS GENERALES DE TODO EL CUERPO */
 *{
     margin: 0;
     padding: 0;
@@ -16,15 +16,14 @@ main {
     background-image: url(../images/main/fondo.png);
 }
 
-/* HEADER ********************************************************************************/
+/* HEADER *******************************************************************************************/
 .cajaHeaderSuperior{
     display: flex;
     justify-content: center;
-    margin-top: 0.30%;
-    margin-bottom: 0.1%;
     width: 100%;
 }
 .textoHeaderSuperior{
+    display: inline-block;
     opacity: 0.4;
     color:black;
     font-size: 1rem;
@@ -32,6 +31,8 @@ main {
     font-family: 'Comfortaa', cursive;
     word-spacing: 6.25rem;
     text-transform:uppercase;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* BARRA DE NAVEGACION ******************************************************************************/
@@ -49,6 +50,7 @@ nav ul{
     height: 40px;
     justify-content: center;
     background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    padding: 0;
 }
 nav ul li{
     width: 100%;
@@ -75,10 +77,9 @@ nav ul li a{
 }
 .textoNavBar:hover{
    transition: .6s;
+   color: white;
 }
-
 /*Logo animacion*/
-
 .logoAnimacion{
     animation-name: prueba;
     animation-iteration-count: 1;
@@ -96,23 +97,18 @@ nav ul li a{
 }
 
 /*SLIDESHOW INDEX*********************************************************/
-
-
-
-.d-block{
-}
 .carousel-inner{
     width: 100%;
     justify-content: center;
+    margin-top: 0.5%;
 }
-
 
 /*BANNER PROMOCIONAL INDEX ***********************************************/
 .banner{
     display: flex;
     justify-content: center;
-    margin-top: 1%;
-    padding-bottom: 1%;
+    margin-top: 2%;
+    padding-bottom: 2%;
     border-bottom-style: solid;
     border-width: 1.5px;
     margin-left: 100px;
@@ -121,11 +117,18 @@ nav ul li a{
 }
 
 /*MATERIA PRIMA *********************************************************/
+
+
+.nav-link :active{
+    border-radius: 100%;
+    background-color: violet;
+}
+
 .cajaMatPrima{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 2%;
     font-family: 'Cabin', sans-serif;
     padding-bottom: 3.5%;
     margin-left: 100px;
@@ -365,7 +368,7 @@ footer h5 p{
     font-size: 0.75rem;
 } 
 
-/*CONTACTO***********************************************************/
+/*CONTACTO*******************************************************************/
 
 .cajageneral{
     display: flex;
