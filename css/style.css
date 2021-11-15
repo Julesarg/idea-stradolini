@@ -118,12 +118,32 @@ nav ul li a{
 
 /*MATERIA PRIMA *********************************************************/
 
-
-.nav-link :active{
-    border-radius: 100%;
-    background-color: violet;
+/*frame de bootstrap modificaciones*/
+.nav-tabs {
+    border-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+.nav-tab{
+    width: 100%;
+}
+.nav-tabs .nav-link.active{
+    border-color: none;
+    border-style: none;
+    background: transparent;
+    border-width: 1.5px;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-style: none;
+}
+.nav-link{
+    transition: none;
+    padding: 0;
 }
 
+/*css original*/
+
+/*titulo superior*/
 .cajaMatPrima{
     display: flex;
     flex-direction: column;
@@ -148,10 +168,12 @@ section h4{
     opacity: 0.5;
     margin-bottom: 0.5%;
 }
+
+/*imagenes*/
 .ImgCajaMatPrim{
     display: flex;
     flex-direction: row;
-    width: 110%;
+    width: 100%;
     justify-content: space-evenly;
 }
 .cajaTransicion{
@@ -168,23 +190,36 @@ section h4{
     transform: scale(1.20,1.20);
     border: 10px solid rgba(216,91,140, 0.3);
 }
+
+/*informacion*/
 .cajaMatPrimaInfo{
     display: flex;
     justify-content: center;
     background-color:rgba(0,0,0,.1);
     height: 100px;
-    width: 80%;
+    width: 100%;
     margin-top: 1%;
     text-align: center;
     align-items: center;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.matPrimaInfo{
-    margin-left: 1%;
+      margin-left: 1%;
     margin-right: 1%;
-    opacity: 1;
-    font-weight: 500;
+        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+}
+
+
+.tituloPropiedades{
+    font-weight: 700;
+    padding-top: 2.5%;
+}
+.textoPropiedades{
+    padding-bottom: 1.5%;
+    padding-top: 0;
+    width: 90%;
+
 }
 /*MEDIOS DE PAGO y ENVIO*******************************************************/
 .cajaPagoYenvios{    
