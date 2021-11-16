@@ -250,44 +250,85 @@ section h4{
 }
 
 /*FOOTER******************************************************************/
+
+/*modificaciones bootstrap*/
+
+p {
+    margin: 0;
+}
+
+/*css original*/
+
 footer{
     display: flex;
     flex-direction: column;
     background:linear-gradient(90deg, #d85b8c 25%,#d44d7d 75%);
-    margin-top: 1%;
 }
 
 /*Caja superior rosa*/
-
 .cajaGde{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
-
 
 /*caja lateral izq*/
 .cajaIzq{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 1%;
+    width: 33%;
 }
-.tuMensaje{
-    text-align: center;
+.cajaLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cajaHorario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.linksDeInteresTitulo{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
-
+.linksDeInteresTexto{
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+    border-bottom-style: solid;
+    border-bottom-width: 100%;
+    border-width: 1px;
+    border-bottom-color: transparent;
+    transition: .2s;
+}
+.linksDeInteresTexto:hover{
+    color:white;
+    opacity: .9;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+.horarioTitulo{
+    color: white;
+    font-weight: 700;
+}
+.horarioTexto{
+    color: white;
+    opacity: .8;
+}
 
 /*caja centro*/
-
 .cajaCentro{
     display: flex;
-    height: 100%;
+    justify-content: center;
+    height: 150px;
     flex-direction: column;
     align-items: center;
     border-left: solid;
@@ -295,16 +336,16 @@ footer{
     border-right-color: white;
     border-left-color: white;
     border-width: 1px;
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    width: 33%;
 }
 .cajaEncontranos{
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
 }
 .cajaRedes{
     display: flex;
@@ -314,14 +355,12 @@ footer{
 }
 .footerImgRedes{
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left:5px;
     margin-right: 5px;
     opacity: 0.8;
 }
-
-
 .footerImgRedes:hover{
     opacity: 1;
     transform: scale(1.2,1.2);
@@ -330,7 +369,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 2%;
 }
 .footerImg{
     width: 20px;
@@ -356,24 +395,24 @@ footer{
 }
 
 /*caja lateral der*/
-
 .cajaDer{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     margin-right: 1%;
+    width: 33%;
 }
 .tuMensaje{
-    text-align: center;
+    text-align: right;
     color: white;
-    font-family: 'Catamaran', sans-serif;
-    font-style: italic;
-    font-weight:bold;    
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;    
 }
 .cajaGato{
     display: flex;
     position: relative;
+    top: 9.5px;
 }
 .gatoImagen2{
     position: absolute;
@@ -391,13 +430,17 @@ footer{
 }
 
 /*subfooter********/
-footer h5{
+.contenedorCopyRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color:#532327;
-    text-align: center;
     text-decoration: none;
     width: 100%;
+    height: 24px;
+    padding-right: 2%;
 }
-footer h5 p{
+.copyRight{
     opacity: 0.6;
     font-family: 'Cabin', sans-serif;
     font-weight: lighter;
