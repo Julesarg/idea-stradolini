@@ -16,7 +16,7 @@ main {
     background-image: url(../images/main/fondo.png);
 }
 
-/* HEADER *******************************************************************************************/
+/* HEADER *************************************************************************************************************************************/
 .cajaHeaderSuperior{
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ main {
     padding: 0%;
 }
 
-/* BARRA DE NAVEGACION ******************************************************************************/
+/* BARRA DE NAVEGACION ***************************************************************************************************************************/
 nav{
     display: flex;
     flex-direction: row;
@@ -96,14 +96,16 @@ nav ul li a{
     }    
 }
 
-/*SLIDESHOW INDEX*********************************************************/
+/*SLIDESHOW INDEX*********************************************************************************************************************************/
+/*bootstrap modificaciones*/
 .carousel-inner{
     width: 100%;
     justify-content: center;
     margin-top: 0.5%;
 }
 
-/*BANNER PROMOCIONAL INDEX ***********************************************/
+/*BANNER PROMOCIONAL INDEX ***********************************************************************************************************************/
+
 .banner{
     display: flex;
     justify-content: center;
@@ -116,9 +118,9 @@ nav ul li a{
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-/*MATERIA PRIMA *********************************************************/
+/*MATERIA PRIMA INDEX*****************************************************************************************************************************/
 
-/*frame de bootstrap modificaciones*/
+/*bootstrap modificaciones*/
 .nav-tabs {
     border-style: none;
     justify-content: space-around;
@@ -224,7 +226,7 @@ section h4{
     margin-bottom: 0;
 }
 
-/*MEDIOS DE PAGO y ENVIO*******************************************************/
+/*MEDIOS DE PAGO y ENVIO****************************************************************************************************/
 .cajaPagoYenvios{    
     display: flex;
     flex-direction: column;
@@ -249,15 +251,15 @@ section h4{
     height: 80px;
 }
 
-/*FOOTER******************************************************************/
+/*FOOTER****************************************************************************************************************/
 
-/*modificaciones bootstrap*/
+/*bootstrap modificaciones*/
 
 p {
     margin: 0;
 }
 
-/*css original*/
+/*css original**************/
 
 footer{
     display: flex;
@@ -429,7 +431,7 @@ footer{
     opacity: 1;
 }
 
-/*subfooter********/
+/*subfooter*/
 .contenedorCopyRight{
     display: flex;
     justify-content: flex-end;
@@ -449,19 +451,74 @@ footer{
     font-size: 0.75rem;
 } 
 
-/*CONTACTO*******************************************************************/
+/*CONTACTO*****************************************************************************************************************/
 
-.cajageneral{
+/*bootstrap modificaciones*/
+
+
+
+
+
+.fondoContacto{
+    background-image: url(../images/contacto/fondogato.png);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    height: 100%;
-    justify-content:center;
-    margin-top: 2%;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
 }
-.caja{
+.cajaDuda{
+    height: 80px;
+    width: 97%;
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 4.7%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4%;
+    margin-left: 6%;
 }
+.textoDuda{
+    color: #545454;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding-right: 1%;
+
+}
+.cajaComentario{
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textoComentario{
+    color: rgba(0, 0, 0, .3);
+    font-size: 2.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-left: 26%;
+}
+
+.cajaAyuda{
+    width: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.textoAyuda{
+    color: #9e9d9d;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-right: 1%;
+
+}
+
+
 .formulario{       
     background-color: #f59099;
     border-radius: 10px;
