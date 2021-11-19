@@ -226,7 +226,7 @@ section h4{
     margin-bottom: 0;
 }
 
-/*MEDIOS DE PAGO y ENVIO****************************************************************************************************/
+/*MEDIOS DE PAGO y ENVIO************************************************************************************************************************/
 .cajaPagoYenvios{    
     display: flex;
     flex-direction: column;
@@ -251,7 +251,7 @@ section h4{
     height: 80px;
 }
 
-/*FOOTER****************************************************************************************************************/
+/*FOOTER********************************************************************************************************************************/
 
 /*bootstrap modificaciones*/
 
@@ -451,14 +451,12 @@ footer{
     font-size: 0.75rem;
 } 
 
-/*CONTACTO*****************************************************************************************************************/
+/*CONTACTO*********************************************************************************************************************************/
 
 /*bootstrap modificaciones*/
 
 
-
-
-
+/*imagen gato superior*/
 .fondoContacto{
     background-image: url(../images/contacto/fondogato.png);
     background-position: center;
@@ -469,7 +467,21 @@ footer{
     width: 100%;
     padding-top: 0%;
     margin-top: 0%;
+    animation-name: gato;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
 }
+@keyframes gato{
+    from{
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+/*textos*/
 .cajaDuda{
     height: 80px;
     width: 97%;
@@ -477,15 +489,28 @@ footer{
     align-items: center;
     justify-content: flex-start;
     margin-top: 4%;
-    margin-left: 6%;
+    padding-left: 6%;
 }
 .textoDuda{
+    display: flex;
     color: #545454;
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     padding-right: 1%;
-
+    animation-name: texto1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes texto1{
+    from{
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
 }
 .cajaComentario{
     height: 80px;
@@ -500,14 +525,25 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     margin-left: 26%;
+    animation-name: texto2;
+    animation-iteration-count: 1;
+    animation-duration: 3.5s;
 }
-
+@keyframes texto2{
+    from{
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
 .cajaAyuda{
     width: 73%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 .textoAyuda{
     color: #9e9d9d;
@@ -515,72 +551,153 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     padding-right: 1%;
-
+    animation-name: texto3;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+}
+@keyframes texto3{
+    from{
+        opacity: 0;
+        transform:translateX(30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+.bottomText{
+    display: flex;
+    height: 600px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.textoBottom{
+    display: flex;
+    color: #9e9d9d;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-right: 1%;
+    animation-name: texto4;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+@keyframes texto4{
+    from{
+        opacity: 0;
+    }
+    to{          
+        opacity: 1;
+    }    
 }
 
+/*caja general de contacto*/
+.cajaGral{
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(245, 144, 153, 0.63);
+    padding: 1.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
 
-.formulario{       
-    background-color: #f59099;
+/*izquierda*/
+.cajaFormIzq{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(228, 228, 228, 0.25);
+    color: rgba(0, 0, 0, 0.53);
     border-radius: 10px;
-    border-style:none;
+    border-style:solid;
+    border-width: 1.5px;
+    border-color: rgba(0, 0, 0, .25);
     font-size: 1.1rem;
-    font-family: 'Cabin', sans-serif;
-    color: white;
-    font-weight: 700;
-    box-shadow: 5px 5px 15px black;
-    text-align: center;
-    padding:15px;
-}
-.contacto{
-    background-color: #62075a;
-    border-radius: 5px;
-    margin: auto;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 1%;
 }
-.recuadrosarriba{
+.recuadrosCampos{
     border-style: none;
-    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.66);
+    display: flex;
+    margin-bottom: 1%;
 }
-.recuadroabajo{
-    border-style: none;
-    border-radius: 5px;
-    width: 300px;
+.cajaNewsLetter{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 1%;
 }
-.estadocivil{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    border-radius: 5px;
-    color: white;
-    background-color: #f59099;
-    font-weight: bold;
-    font-size: 1.1rem;
+.newsLetter{
+    margin-left: 2%;
 }
-.newsletter{
-    margin-bottom: 10px;
-    margin-top: 10px;
+.cajaCantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.sexo{
+.cantidadGatos{
     display: inline-block;
-    padding-bottom: 7px;
 }
-.botonesabajo{
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    color: white;
-    background-color: #f59099;
+input[type=text] {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+  }  
+  input[type=text]:focus {
+    border: 1px solid rgba(0, 0, 0, .4);
+    color: rgba(0, 0, 0, .3);
+  }
+
+/*derecha*/
+.cajaFormDer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 296px;
+    margin-left: 1.5%;
+}
+.recuadroMensaje{
+    border-style: none;
     border-radius: 5px;
-    font-weight: bold;
+    width: 100%;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.53);
+  }
+  textarea {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+  }  
+  textarea:focus {
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .3);
+  }
+.enviar{
+    background-color:rgba(245, 144, 153, 0.63);
+    color: rgba(0, 0, 0, 0.53);
     font-size: 1rem;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin: 1px; 
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.limpiar{
+    background-color:rgba(245, 144, 153, 0.63);
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*NOSOTROS*****************************************************************/
+
+
+/*NOSOTROS**********************************************************************************************************************************/
 .sectionfondo{
     display: flex;
     flex-direction: column;
