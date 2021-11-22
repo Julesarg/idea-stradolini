@@ -36,6 +36,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: white;
 }
 .textoHeaderSuperior{
     display: inline-block;
@@ -467,6 +468,434 @@ footer{
     font-size: 0.75rem;
 } 
 
+/*PRODUCTOS*****************************************************************************************************************/
+
+/*banner superior*/
+.bannerFondoProductos{
+    width: 100%;
+    height: 800px;
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.bannerFoto1{
+    animation-name: foto1;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes foto1{
+    from{
+        opacity: 0;
+        transform:translateX(-500px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+.bannerFoto2{
+    animation-name: foto2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes foto2{
+    from{
+        opacity: 0;
+        transform:translateX(-1000px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+.bannerFoto3{
+    animation-name: foto3;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes foto3{
+    from{
+        opacity: 0;
+        transform:translateX(-1500px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+.bannerFoto4{
+    animation-name: foto4;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes foto4{
+    from{
+        opacity: 0;
+        transform:translateX(-2000px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+.bannerCajaTexto{
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .7);
+    animation-name: cajabanner;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    transition-delay: 1s;
+    justify-content: flex-end;
+    align-items: center;
+}
+@keyframes cajabanner{
+    from{
+        width: 0px;
+        opacity: 0;
+        transform:translateX(-2600px);
+    }
+    to{
+        width: 100%;
+        opacity: 1;
+        transform:translateX(0px)
+    }
+}
+.bannerFooterTexto{
+    text-decoration: none;
+    font-size: 4.5rem;
+    color:white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 4%;
+    animation-name: textobanner;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes textobanner{
+    from{
+        opacity: 0;
+        color: black;
+    }
+    to{
+        opacity: 1;
+        color:white;
+    }
+}
+
+/*bootstrap correciones*/
+
+.bannerFooterTexto:hover{
+    color: white;
+}
+
+
+/*Contenedor general abajo nav y productos*************************************/
+.productosContenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+/*LADO IZQUIERDO*/
+/*navmenu************/
+.cajaMenuIzq{
+    display: flex;
+    flex-direction: row;
+    width: 175px;
+    height: 800px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(191, 85, 124, .3);
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding-top: 1.5%;
+}
+.contenedorMenu{
+    display:inline-block;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+.textoMenuIzq{
+    width: 100%;
+    color: white;    
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;    
+}
+
+/*LADO DERECHO*/
+
+/*TEXTO*/
+.cajaMenuDer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+.cajaTextoDondeEstoy{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 5px;
+}
+.textoDondeEstoy{
+    display: inline-block;   
+    color: black;
+    opacity: 0.3;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 5px;
+    transition: .3s;
+}
+.cajaTextoDondeEstoy :hover {
+    opacity: 0.5;
+}
+
+/*ITEMS*/
+.cajaProductos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column-gap: 75px;
+    grid-row-gap: 75px;
+    height:auto;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, .3);
+    border-top-width: 3px;
+    padding-top: 2%;
+    padding-right: 18%;
+}
+.imagenProductoListado{
+    width: 275px;
+    height: 275px;
+    display: block;
+}
+.cajitaImagen{
+    position: relative;
+    width: 275px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3)
+}
+.textoprueba1{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 105%;
+    background-color: #008CBA;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgba(191, 85, 124, .3);
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);    
+    width: 100%;
+    height:13px;
+    transition: .5s ease;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgba(191, 85, 124, 0)    
+}
+.cajitaImagen:hover .textoprueba1{
+    height: 12%;
+    color: slategrey;
+}
+
+/*CLIENTES*************************************************************************/
+
+.grid{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+}
+.imagenesgrid{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+/*grilla izquierda*/
+.gridizq{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height:650px;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+.imagengrid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.imagengrid2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.imagengrid3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.imagengrid4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.imagengrid5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.imagengrid6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.imagengrid7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*grilla derecha*/
+.gridder{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 650px;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.imagengrid10 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.imagengrid20 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.imagengrid30 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.imagengrid40 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.imagengrid50 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.imagengrid60 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/*NOSOTROS**********************************************************************************************************************************/
+.sectionfondo{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/nosotros/nosotrosfondo.png);
+    background-repeat:no-repeat;
+    height:auto;
+    width: 100%;
+    background-position: center;
+    margin-top: 2%;
+}
+.cajatitular{
+    display: flex;
+    width: 50%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgba(0, 0, 0, 0.6);
+    align-items: center;
+    height: 65px;
+}
+.textotitular{
+    display: block;
+    font-size: 3rem;
+    opacity: 0.87;
+    padding-left: 5%;
+}
+.cajatexto{
+    text-align: right;
+    padding: 1%;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 3%;
+    width: 50%;
+    height:auto;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.h3texto{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.epigrafe{
+    display: flex;
+    width: 40%;
+    margin-left: 60%;
+    margin-top: 4%;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.6); 
+    border-bottom-left-radius: 10px;
+}
+.epigrafe--texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    font-style: italic;
+    opacity: 0.8;
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
 /*CONTACTO*********************************************************************************************************************************/
 
 /*bootstrap modificaciones*/
@@ -709,430 +1138,4 @@ input[type=text] {
     font-size: 0.9rem;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-/*NOSOTROS**********************************************************************************************************************************/
-.sectionfondo{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../images/nosotros/nosotrosfondo.png);
-    background-repeat:no-repeat;
-    height:auto;
-    width: 100%;
-    background-position: center;
-    margin-top: 2%;
-}
-.cajatitular{
-    display: flex;
-    width: 50%;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgba(0, 0, 0, 0.6);
-    align-items: center;
-    height: 65px;
-}
-.textotitular{
-    display: block;
-    font-size: 3rem;
-    opacity: 0.87;
-    padding-left: 5%;
-}
-.cajatexto{
-    text-align: right;
-    padding: 1%;
-    display: flex;
-    margin-left: 30%;
-    margin-top: 3%;
-    width: 50%;
-    height:auto;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.5);
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.h3texto{    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:normal;
-    font-style: italic;
-    font-size: 1.2rem;
-    opacity: 0.7;
-}
-.epigrafe{
-    display: flex;
-    width: 40%;
-    margin-left: 60%;
-    margin-top: 4%;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.6); 
-    border-bottom-left-radius: 10px;
-}
-.epigrafe--texto{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:normal;
-    font-style: italic;
-    opacity: 0.8;
-    padding-left: 20px;
-    padding-top: 3px;
-    padding-bottom: 4px;
-}
-
-/*CLIENTES*************************************************************************/
-
-.grid{
-    display: flex;
-    width: 100%;
-    margin-top: 2%;
-}
-.imagenesgrid{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-/*grilla izquierda*/
-.gridizq{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    width: 100%;
-    height:650px;
-    margin-right: 2%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-}
-.imagengrid1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.imagengrid2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-.imagengrid3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.imagengrid4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.imagengrid5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-.imagengrid6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-.imagengrid7 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-/*grilla derecha*/
-.gridder{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    width: 100%;
-    height: 650px;
-    margin-left: 2%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-}
-
-.imagengrid10 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.imagengrid20 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.imagengrid30 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.imagengrid40 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.imagengrid50 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-.imagengrid60 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-/*PRODUCTOS**********************************************************************/
-
-
-/*banner superior*/
-
-.bannerFondoProductos{
-    width: 100%;
-    height: 800px;
-    margin-top: 0.5%;
-    display: flex;
-    justify-content: space-between;
-}
-.bannerFoto1{
-    animation-name: foto1;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes foto1{
-    from{
-        opacity: 0;
-        transform:translateX(-500px);
-    }
-    to{          
-        opacity: 1;
-        transform:translateX(0px);
-    }
-}
-.bannerFoto2{
-    animation-name: foto2;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes foto2{
-    from{
-        opacity: 0;
-        transform:translateX(-1000px);
-    }
-    to{          
-        opacity: 1;
-        transform:translateX(0px);
-    }    
-}
-.bannerFoto3{
-    animation-name: foto3;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes foto3{
-    from{
-        opacity: 0;
-        transform:translateX(-1500px);
-    }
-    to{          
-        opacity: 1;
-        transform:translateX(0px);
-    }    
-}
-.bannerFoto4{
-    animation-name: foto4;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes foto4{
-    from{
-        opacity: 0;
-        transform:translateX(-2000px);
-    }
-    to{          
-        opacity: 1;
-        transform:translateX(0px);
-    }    
-}
-.bannerCajaTexto{
-    display: flex;
-    position: relative;
-    bottom: 100px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, .7);
-    animation-name: cajabanner;
-    animation-iteration-count: 1;
-    animation-duration: 4s;
-    transition-delay: 1s;
-    justify-content: flex-end;
-    align-items: center;
-}
-@keyframes cajabanner{
-    from{
-        width: 0px;
-        opacity: 0;
-        transform:translateX(-2600px);
-    }
-    to{
-        width: 100%;
-        opacity: 1;
-        transform:translateX(0px)
-    }
-}
-.bannerFooterTexto{
-    font-size: 4.5rem;
-    color:white;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 5%;
-    animation-name: textobanner;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
-}
-@keyframes textobanner{
-    from{
-        opacity: 0;
-        color: black;
-    }
-    to{
-        opacity: 1;
-        color:white;
-    }
-}
-
-/*Contenedor general nav y productos************************/
-.productosContenedor{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-    align-items:flex-start;
-}
-
-/*LADO IZQUIERDO*/
-
-/*navmenu************/
-.cajaMenuIzq{
-    display: flex;
-    flex-direction: row;
-    width: 175px;
-    height: 800px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: rgba(191, 85, 124, .3);
-    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
-    justify-content: center;
-    padding-top: 1.5%;
-}
-.contenedorMenu{
-    display:inline-block;
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    height: auto;
-}
-.textoMenuIzq{
-    width: 100%;
-    color: white;    
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;    
-}
-
-/*LADO DERECHO*/
-
-/*TEXTO*/
-.cajaMenuDer{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10%;
-}
-
-.cajaTextoDondeEstoy{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    margin: 5px;
-}
-.textoDondeEstoy{
-    display: inline-block;   
-    color: black;
-    opacity: 0.3;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 5px;
-    transition: .3s;
-}
-.cajaTextoDondeEstoy :hover {
-    opacity: 0.5;
-}
-
-/*ITEMS*/
-.cajaProductos{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-column-gap: 75px;
-    grid-row-gap: 75px;
-    height:auto;
-    border-top-style: solid;
-    border-top-color: rgba(0, 0, 0, .3);
-    border-top-width: 3px;
-    padding-top: 2%;
-    padding-right: 18%;
-}
-.imagenProductoListado{
-    width: 275px;
-    height: 275px;
-    display: block;
-}
-.cajitaImagen{
-    position: relative;
-    width: 275px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3)
-}
-.textoprueba1{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 105%;
-    background-color: #008CBA;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    background-color: rgba(191, 85, 124, .3);
-    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);    
-    width: 100%;
-    height:13px;
-    transition: .5s ease;
-    font-size: 1.25rem;
-    padding-bottom: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    color:rgba(191, 85, 124, 0)    
-}
-.cajitaImagen:hover .textoprueba1{
-    height: 12%;
-    color: slategrey;
 }
