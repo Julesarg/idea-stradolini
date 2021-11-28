@@ -12,6 +12,208 @@ body {
 main {
     flex: 1;
    }
+
+/*RESPONSIVE**********************************************************/
+   @media screen and (max-width:576px){
+
+
+
+    /*header y navbar*/
+    .headerBox{
+        height: 22px;
+        }
+        .logoHeader{
+            position: relative;
+            bottom: 8px !important;
+            width: 100px;
+            height: 100px;
+            display: block !important;
+            z-index: 1;
+            animation-name: prueba;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        }
+        .headerBoxText{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        }
+    section label{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+        margin-top: -100%;
+        transition: .5s;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .LiImagen{
+       display: none;
+    }
+    .cajaNavBar{
+        justify-content: left;
+        padding-left: 20px;
+    }
+    #hamburguesa:checked ~ nav{
+        margin-top: 0;
+    }
+    .textoNavBar{
+        font-size: 1rem;
+    }
+/*fin header y navbar*/
+
+
+/*bienvenidos*/
+.cajaBienvenidos{
+    display: flex;
+    width: 100%;
+    flex-direction: column !important;
+    margin-top: 5%;
+}
+.cajaTexto{
+    flex-direction: column;
+    width: 100% !important;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;    
+}
+.cajaImgBienvenidos{
+    width: 100% !important;
+}
+.cajaImgBienvenidos--foto{
+    width: 100%;
+    height: auto;
+}
+.tituloBienvenidos{
+    font-size: 2rem !important;
+    letter-spacing: -2px !important;
+    text-align: center;
+    padding: 0 !important;
+}
+.parrafoBienvenidos{
+    font-size: 1.2rem !important;
+}
+
+}
+/*FIN RESPONSIVE*/
+
+
+
+
+
+/*HEADER*/
+.headerBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+.headerBoxText{
+    opacity: 0.4;
+    color:black;
+    font-size: 0.9rem;
+    font-weight:bold;
+    font-family: 'Comfortaa', cursive;
+    word-spacing: 10rem;
+    text-transform:uppercase;
+    margin: 0%;
+    padding: 0%;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logoHeader{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    display: none;    
+}
+
+/*BARRA DE NAVEGACION*/
+.navegacion{
+    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    width: 100%;
+}
+#hamburguesa{
+    display: none;
+}
+label{
+    display: inline-block;
+    padding: 10px;
+    display: none;
+}
+label :hover{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+nav ul{    
+    list-style: none;
+    display:flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+nav ul li img{
+    position:relative;
+    width: 170px;
+    height: 170px;
+    bottom: 38px;
+    z-index: 1;
+}
+nav ul li a{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color: white;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.cajaNavBar{
+    align-items: center;
+}
+.cajaNavBar:hover{
+    background-color:#8f3f7d;
+    transition: .6s;
+}
+.textoNavBar:hover{
+   transition: .6s;
+   color: white;
+}
+.logoAnimacion{
+    animation-name: prueba;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes prueba{
+    from{
+        opacity: 0;
+        transform:translateY(-100px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateY(0px);
+    }    
+}
+
+/*Fondo general*/
 .fondoHuellas{
     background-image: url(../images/main/fondo.png);
 }
@@ -31,109 +233,150 @@ main {
     }    
 }
 
-/* HEADER *************************************************************************************************************************************/
-.cajaHeaderSuperior{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: white;
-}
-.textoHeaderSuperior{
-    display: inline-block;
-    opacity: 0.4;
-    color:black;
-    font-size: 0.9rem;
-    font-weight:bold;
-    font-family: 'Comfortaa', cursive;
-    word-spacing: 6.25rem;
-    text-transform:uppercase;
-    margin: 0%;
-    padding: 0%;
-}
-
-/* BARRA DE NAVEGACION ***************************************************************************************************************************/
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-}
-nav ul{    
-    list-style: none;
-    display:flex;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    justify-content: center;
-    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
-    padding: 0;
-}
-nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-nav ul li img{
-    position:relative;
-    top: 27px;
-    width: 170px;
-    height: 170px;
-    z-index: 1;
-}
-nav ul li a{
-    font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight:600;
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-/*transicion navbar*/
-.cajaNavBar:hover{
-    background-color:#8f3f7d;
-    transition: .6s;
-}
-.textoNavBar:hover{
-   transition: .6s;
-   color: white;
-}
-/*Logo animacion*/
-.logoAnimacion{
-    animation-name: prueba;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes prueba{
-    from{
-        opacity: 0;
-        transform:translateY(-100px);
-    }
-    to{          
-        opacity: 1;
-        transform:translateY(0px);
-    }    
-}
-
-/*SLIDESHOW INDEX*********************************************************************************************************************************/
-/*bootstrap modificaciones*/
+/*SLIDESHOW INDEX*/
 .carousel-inner{
     display: flex;
+    margin-top: 1%;
+}
+.d-block{
     width: 100%;
-    margin-top: 0.5%;
 }
 
-/*BANNER PROMOCIONAL INDEX ***********************************************************************************************************************/
-
-.banner{
+/*BIENVENIDOS*/
+.cajaBienvenidos{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.cajaTexto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 5%;
+    margin-left: 5%;
+    justify-content: space-between;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-top-style: solid;
+    border-width: 1px;
+}
+.cajaImgBienvenidos{
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    padding-bottom: 2%;
-    border-bottom-style: solid;
-    border-width: 1.5px;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
+.cajaImgBienvenidos--foto{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.tituloBienvenidos{
+    display: block;
+    padding-left: 2%;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .4);
+    letter-spacing: -4px;
+}
+.parrafoBienvenidos{
+    display: block;
+    padding-left: 2%;
+    padding-right: 4%;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .3);
+    line-height:normal;
+}
+.cajaMasInformacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+/*2da parte*/
+.cajaQueHacemos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 5%;
+    margin-left: 5%;
+    justify-content: space-between;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-top-style: solid;
+    border-width: 1px;
+}
+.cajaQueMateriales{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.textoTitulos{
+    display: block;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .4);
+    letter-spacing: -4px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.cajaQueHacemos--abajo{
+    display: flex;
+    flex-direction: row;
+}
+.cajaQueHacemos--abajo--bis{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+}
+.cajaQueHacemos--abajo--texto{
+    display: block;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .3);
+    line-height:normal;
+}
+.linkProductos{
+    padding-top: 10%;
+    padding-left: 50%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cajaQueMateriales{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-top-style: solid;
+    border-width: 1px;
+    margin-right: 5%;
+    padding-left: 5%;
+}
+.cajaQueMateriales--abajo--texto{
+    display: block;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .3);
+    line-height:normal;
+    padding-top: 2%;
+}
+.cajaQueMateriales--bis{
+    display: flex;
+    flex-direction: column;
+}
+.linkMateriales{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1%;
+    padding-left: 70%;
+}
+
 
 /*MATERIA PRIMA INDEX*****************************************************************************************************************************/
 
@@ -216,6 +459,11 @@ section h4{
 .cajaTransicion:hover {
     transform: scale(1.20,1.20);
     border: 10px solid rgba(216,91,140, 0.3);
+}
+
+.fotosMateriales{
+    width: 100%;
+    height: 100%;
 }
 
 /*informacion*/
