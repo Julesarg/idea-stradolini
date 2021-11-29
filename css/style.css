@@ -839,7 +839,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin-top: 20%;
-    width: 200px;
+    width: 300px;
 }
 .accordion-collapse{
     background-color: rgba(191, 85, 124, .3);
@@ -855,26 +855,23 @@ footer{
 }
 .accordion-button{
     background-color:transparent;
-    margin-left: 5px;
     margin-bottom: 5px;
     padding-top: 0;
     padding-bottom: 0;
     color:white;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;    
 }
 .accordion-button::after{
-    margin-left: 5px;
     background-image:url(../images/productos/flechaabajo.png);
 }
 .accordion-button:not(.collapsed){
     background-color: transparent;
-    margin-left: 5px;
     color: white;
     box-shadow:none;
 }
 .accordion-button:not(.collapsed)::after{
-    margin-left: 5px;
     background-image: url(/images/productos/flechaarriba.png);
 }
 .accordion-button:focus {
@@ -886,21 +883,12 @@ footer{
 .cajaMenuIzq{
     display: flex;
     flex-direction: row;
-    width: 200px;
-    height: 800px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
     background-color: rgba(191, 85, 124, .3);
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-.textoMenuIzq{
-    width: 100%;
-    color: white;    
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;    
+    margin-left: 2%;
 }
 .hipervinculosTextoProductos{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -913,7 +901,7 @@ footer{
     padding-right: 25%;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.25rem;
     transition: .2s;
 }
 .hipervinculosTextoProductos:hover{
