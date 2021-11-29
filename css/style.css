@@ -129,10 +129,54 @@ main {
 .linkMateriales{
     padding-left: 0 !important;
 }
+.imgMateriales{
+    width: 100%;
+}
 /*pagos y envios*/
+.cajaImgMdp{
+    height: 80px !important;
+}
+.imgMdp{
+    width: auto;
+    height: 50px !important;
+}
 
+/*footer*/
+/*Caja superior rosa*/
+.cajaGde{
+    flex-direction: column !important;
+    align-items: center;
+}
 
-
+/*caja lateral izq*/
+.cajaIzq{
+    justify-content: space-between !important;
+    align-items: flex-start;
+    padding: 2% !important;
+    width: 100% !important;
+}
+/*caja centro*/
+.cajaCentro{
+    margin: 0% !important;
+    width: 70% !important;
+}
+/*caja lateral der*/
+.cajaDer{
+    align-items: center !important;
+    justify-content: flex-end;
+    margin-right: 0% !important;
+    width: 33%;
+}
+.tuMensaje{
+    text-align: center !important;
+}
+.cajaGato{
+    top: 2px !important;
+}
+/*subfooter*/
+.contenedorCopyRight{
+    justify-content: center !important;
+}
 
 }
 /*FIN RESPONSIVE*/
@@ -272,7 +316,7 @@ nav ul li a{
 /*SLIDESHOW INDEX*/
 .carousel-inner{
     display: flex;
-    margin-top: 1%;
+    margin-top: 3%;
     position: relative;
     z-index: 3 !important;
 }
@@ -307,6 +351,7 @@ nav ul li a{
     display: flex;
     width: 100%;
     height: auto;
+    padding-right: 5%;
 }
 .tituloBienvenidos{
     display: block;
@@ -421,8 +466,7 @@ nav ul li a{
     padding-left: 70%;
 }
 
-
-/*MEDIOS DE PAGO y ENVIO************************************************************************************************************************/
+/*MEDIOS DE PAGO y ENVIO*/
 .cajaPagoYenvios{    
     display: flex;
     flex-direction: column;
@@ -645,9 +689,9 @@ footer{
     display: inline-block;
     color: white;
     font-size: 0.75rem;
-} 
+}
 
-/*PRODUCTOS*****************************************************************************************************************/
+/*PRODUCTOS*/
 
 /*banner superior*/
 .bannerFondoProductos{
