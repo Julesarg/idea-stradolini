@@ -1,0 +1,214 @@
+.fondoContacto{
+    background-image: url(../images/contacto/fondogato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
+    animation-name: efecto1contacto;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    .cajaDuda{
+        height: 80px;
+        width: 97%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 4%;
+        padding-left: 6%;
+        .textoDuda{
+            display: flex;
+            color: #545454;
+            font-size: 5rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            padding-right: 1%;
+            animation-name: efecto1contacto;
+            animation-iteration-count: 1;
+            animation-duration: 3s;
+        }
+    }
+    .cajaComentario{
+        height: 80px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .textoComentario{
+            color: rgba(0, 0, 0, .3);
+            font-size: 4rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-left: 26%;
+            animation-name: efecto1contacto;
+            animation-iteration-count: 1;
+            animation-duration: 3.5s;
+        }
+    }
+    .cajaAyuda{
+        width: 73%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .textoAyuda{
+            color: #9e9d9d;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            padding-right: 1%;
+            animation-name: texto3;
+            animation-iteration-count: 1;
+            animation-duration: 2.5s;
+        }
+    }
+    .bottomText{
+        display: flex;
+        height: 600px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .textoBottom{
+            display: flex;
+            color: #9e9d9d;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            padding-right: 1%;
+            animation-name: texto4;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+        }
+    }   
+}
+@keyframes efecto1contacto{
+    from{
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+@keyframes texto3{
+    from{
+        opacity: 0;
+        transform:translateX(30px);
+    }
+    to{          
+        opacity: 1;
+        transform:translateX(0px);
+    }    
+}
+@keyframes texto4{
+    from{
+        opacity: 0;
+    }
+    to{          
+        opacity: 1;
+    }    
+}
+.cajaGral{
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(245, 144, 153, 0.63);
+    padding: 1.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    .cajaFormIzq{
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(228, 228, 228, 0.25);
+        color: rgba(0, 0, 0, 0.53);
+        border-radius: 10px;
+        border-style:solid;
+        border-width: 1.5px;
+        border-color: rgba(0, 0, 0, .25);
+        font-size: 1.1rem;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1%;
+        label{
+            display: block;
+            padding: 0;
+        }
+        .recuadrosCampos{
+            border-style: none;
+            background-color: rgba(255, 255, 255, 0.66);
+            display: flex;
+            margin-bottom: 1%;
+        }
+        .cajaNewsLetter{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin-top: 1%;
+            .newsLetter{
+                margin-left: 2%;
+            }
+        }
+        .cajaCantidad{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .cantidadGatos{
+                display: inline-block;
+            }
+        }
+        input[type=text] {
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.66);
+        }  
+        input[type=text]:focus {
+            border: 1px solid rgba(0, 0, 0, .4);
+            color: rgba(0, 0, 0, .3);
+        }
+    }
+    .cajaFormDer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+        height: 296px;
+        margin-left: 1.5%;
+        .recuadroMensaje{
+            border-style: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 220px;
+            background-color: rgba(255, 255, 255, 0.66);
+        }
+        .enviar{
+            background-color:rgba(245, 144, 153, 0.63);
+            color: rgba(0, 0, 0, 0.53);
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .limpiar{
+            background-color:rgba(245, 144, 153, 0.63);
+            color: rgba(0, 0, 0, 0.53);
+            font-size: 0.9rem;
+            font-weight: 500;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    ::placeholder{
+        color: rgba(0, 0, 0, 0.53);
+    }
+    textarea{
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.66);
+    }  
+    textarea:focus{
+        border: 1px solid rgba(0, 0, 0, .3);
+        color: rgba(0, 0, 0, .3);
+    }    
+}

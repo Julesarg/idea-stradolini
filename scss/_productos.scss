@@ -1,0 +1,300 @@
+/*bootstrap correciones*/
+.bannerFooterTexto:hover{
+    color: white;
+}
+/*fin correciones*/
+.bannerFondoProductos{
+    width: 100%;
+    height: 800px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    .bannerFoto1{
+        animation-name: foto1;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    @keyframes foto1{
+        from{
+            opacity: 0;
+            transform:translateX(-500px);
+        }
+        to{          
+            opacity: 1;
+            transform:translateX(0px);
+        }
+    }
+    .bannerFoto2{
+        animation-name: foto2;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    @keyframes foto2{
+        from{
+            opacity: 0;
+            transform:translateX(-1000px);
+        }
+        to{          
+            opacity: 1;
+            transform:translateX(0px);
+        }    
+    }
+    .bannerFoto3{
+        animation-name: foto3;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+    @keyframes foto3{
+        from{
+            opacity: 0;
+            transform:translateX(-1500px);
+        }
+        to{          
+            opacity: 1;
+            transform:translateX(0px);
+        }    
+    }
+    .bannerFoto4{
+    animation-name: foto4;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    }
+    @keyframes foto4{
+        from{
+            opacity: 0;
+            transform:translateX(-2000px);
+        }
+        to{          
+            opacity: 1;
+            transform:translateX(0px);
+        }    
+    }
+}
+.bannerCajaTexto{
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .7);
+    animation-name: cajabanner;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    transition-delay: 1s;
+    justify-content: flex-end;
+    align-items: center;
+    .bannerFooterTexto{
+        text-decoration: none;
+        font-size: 4.5rem;
+        color:white;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 4%;
+        animation-name: textobanner;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+    }
+}
+@keyframes cajabanner{
+    from{
+        width: 0px;
+        opacity: 0;
+        transform:translateX(-2600px);
+    }
+    to{
+        width: 100%;
+        opacity: 1;
+        transform:translateX(0px)
+    }
+}
+@keyframes textobanner{
+    from{
+        opacity: 0;
+        color: black;
+    }
+    to{
+        opacity: 1;
+        color:white;
+    }
+}
+.separador{
+    display:flex;
+    width: 100%;
+    height: 30px;
+    margin-top: -80px;
+    margin-bottom: 5%;    
+    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+}
+.productosContenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items:flex-start;
+    .cajaMenuIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        margin-top: 2%;
+        width: 300px;
+        height: auto;
+        border-radius: 30px;
+        background-color: rgba(191, 85, 124, .3);
+        box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
+        margin-left: 2%;
+        .textoProductos{
+            display: block;
+            width: 100%;
+            text-align: center;
+            color:white;
+            font-size: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .7);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+        }
+        .accordion{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            width: 300px;
+            height: auto;            
+            .accordion-item{
+                background-color:transparent;
+                border: none;
+            }
+            .accordion-header{
+                .accordion-button{
+                    background-color:transparent;
+                    margin-bottom: 5px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    color:white;
+                    font-size: 1.5rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 700;                    
+                }
+                .accordion-button::after{
+                    background-image:url(../images/productos/flechaabajo.png);
+                }
+                .accordion-button:not(.collapsed){
+                    background-color: transparent;
+                    color: white;
+                    box-shadow:none;
+                }
+                .accordion-button:not(.collapsed)::after{
+                    background-image: url(/images/productos/flechaarriba.png);
+                }
+                .accordion-button:focus {
+                    z-index: 3;
+                    outline: 0;
+                    box-shadow:none;
+                }
+            }
+        }        
+    }    
+    .cajaMenuDer{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+        .cajaTextoDondeEstoy{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            margin: 5px;
+            .textoDondeEstoy{
+                display: inline-block;   
+                color: black;
+                opacity: 0.3;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding-left: 5px;
+                transition: .3s;
+            }                
+        }
+        .cajaTextoDondeEstoy :hover {
+            opacity: 0.5;
+            color: rgba(0, 0, 0, .8);
+        }
+        .cajaProductos{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-column-gap: 75px;
+            grid-row-gap: 75px;
+            height:auto;
+            border-top-style: solid;
+            border-top-color: rgba(0, 0, 0, .3);
+            border-top-width: 3px;
+            padding-top: 2%;
+            padding-right: 18%;
+            .cajitaImagen{
+                position: relative;
+                width: 250px;
+                box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+                .textoprueba1{
+                    display: flex;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: center;
+                    top: 105%;
+                    border-bottom-left-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    background-color: rgba(191, 85, 124, .3);
+                    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);    
+                    width: 100%;
+                    height:13px;
+                    transition: .5s ease;
+                    font-size: 1.25rem;
+                    padding-bottom: 5px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    color:rgba(191, 85, 124, 0);
+                    text-decoration: none;    
+                }              
+            }
+            .cajitaImagen:hover .textoprueba1{
+                height: 12%;
+                color: slategrey;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.accordion-collapse{
+    background-color: rgba(191, 85, 124, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .hipervinculosTextoProductos{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        padding-top:5px;
+        padding-bottom: 5px;
+        padding-left: 30%;
+        padding-right: 25%;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 700;
+        font-size: 1.25rem;
+        transition: .2s;
+    }
+    .hipervinculosTextoProductos:hover{
+        background-color: rgba(191, 85, 124, .3);
+        color: rgba(0, 0, 0, 0.3);
+    }
+}
+.imagenProductoListado{
+    width: 250px;
+    height: 250px;
+    display: block;
+}
