@@ -855,13 +855,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   justify-content: space-between;
 }
-
-.bannerFoto1 {
+.bannerFondoProductos .bannerFoto1 {
   animation-name: foto1;
   animation-iteration-count: 1;
   animation-duration: 2s;
 }
-
 @keyframes foto1 {
   from {
     opacity: 0;
@@ -872,12 +870,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     transform: translateX(0px);
   }
 }
-.bannerFoto2 {
+.bannerFondoProductos .bannerFoto2 {
   animation-name: foto2;
   animation-iteration-count: 1;
   animation-duration: 2s;
 }
-
 @keyframes foto2 {
   from {
     opacity: 0;
@@ -888,12 +885,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     transform: translateX(0px);
   }
 }
-.bannerFoto3 {
+.bannerFondoProductos .bannerFoto3 {
   animation-name: foto3;
   animation-iteration-count: 1;
   animation-duration: 2s;
 }
-
 @keyframes foto3 {
   from {
     opacity: 0;
@@ -904,12 +900,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     transform: translateX(0px);
   }
 }
-.bannerFoto4 {
+.bannerFondoProductos .bannerFoto4 {
   animation-name: foto4;
   animation-iteration-count: 1;
   animation-duration: 2s;
 }
-
 @keyframes foto4 {
   from {
     opacity: 0;
@@ -920,6 +915,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     transform: translateX(0px);
   }
 }
+
 .bannerCajaTexto {
   display: flex;
   position: relative;
@@ -932,6 +928,17 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   transition-delay: 1s;
   justify-content: flex-end;
   align-items: center;
+}
+.bannerCajaTexto .bannerFooterTexto {
+  text-decoration: none;
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 4%;
+  animation-name: textobanner;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
 }
 
 @keyframes cajabanner {
@@ -946,18 +953,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     transform: translateX(0px);
   }
 }
-.bannerFooterTexto {
-  text-decoration: none;
-  font-size: 4.5rem;
-  color: white;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 4%;
-  animation-name: textobanner;
-  animation-iteration-count: 1;
-  animation-duration: 3s;
-}
-
 @keyframes textobanner {
   from {
     opacity: 0;
@@ -977,7 +972,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
 }
 
-/*Contenedor general abajo nav y productos*************************************/
 .productosContenedor {
   display: flex;
   flex-direction: row;
@@ -986,65 +980,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-/*LADO IZQUIERDO*/
-/*navmenu************/
-/*correciones bootstrap*/
-.accordion {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  width: 300px;
-  height: auto;
-}
-
-.accordion-collapse {
-  background-color: rgba(191, 85, 124, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.accordion-item {
-  background-color: transparent;
-  border: none;
-}
-
-.accordion-button {
-  background-color: transparent;
-  margin-bottom: 5px;
-  padding-top: 0;
-  padding-bottom: 0;
-  color: white;
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-.accordion-button::after {
-  background-image: url(../images/productos/flechaabajo.png);
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: transparent;
-  color: white;
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url(/images/productos/flechaarriba.png);
-}
-
-.accordion-button:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: none;
-}
-
-/*css original*/
-.cajaMenuIzq {
+.productosContenedor .cajaMenuIzq {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1058,8 +994,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
   margin-left: 2%;
 }
-
-.textoProductos {
+.productosContenedor .cajaMenuIzq .textoProductos {
   display: block;
   width: 100%;
   text-align: center;
@@ -1072,43 +1007,55 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   border-bottom-width: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.3);
 }
-
-.hipervinculosTextoProductos {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  text-decoration: none;
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30%;
-  padding-right: 25%;
-  color: rgba(255, 255, 255, 0.6);
+.productosContenedor .cajaMenuIzq .accordion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 300px;
+  height: auto;
+}
+.productosContenedor .cajaMenuIzq .accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+.productosContenedor .cajaMenuIzq .accordion .accordion-header .accordion-button {
+  background-color: transparent;
+  margin-bottom: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
-  transition: 0.2s;
 }
-
-.hipervinculosTextoProductos:hover {
-  background-color: rgba(191, 85, 124, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+.productosContenedor .cajaMenuIzq .accordion .accordion-header .accordion-button::after {
+  background-image: url(../images/productos/flechaabajo.png);
 }
-
-/*LADO DERECHO*/
-/*TEXTO*/
-.cajaMenuDer {
+.productosContenedor .cajaMenuIzq .accordion .accordion-header .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+.productosContenedor .cajaMenuIzq .accordion .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url(/images/productos/flechaarriba.png);
+}
+.productosContenedor .cajaMenuIzq .accordion .accordion-header .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+.productosContenedor .cajaMenuDer {
   display: flex;
   flex-direction: column;
   margin-right: 10%;
 }
-
-.cajaTextoDondeEstoy {
+.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
   display: flex;
   flex-direction: row;
   width: auto;
   margin: 5px;
 }
-
-.textoDondeEstoy {
+.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
   display: inline-block;
   color: black;
   opacity: 0.3;
@@ -1119,14 +1066,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   padding-left: 5px;
   transition: 0.3s;
 }
-
-.cajaTextoDondeEstoy :hover {
+.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy :hover {
   opacity: 0.5;
   color: rgba(0, 0, 0, 0.8);
 }
-
-/*ITEMS*/
-.cajaProductos {
+.productosContenedor .cajaMenuDer .cajaProductos {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
@@ -1139,20 +1083,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   padding-top: 2%;
   padding-right: 18%;
 }
-
-.imagenProductoListado {
-  width: 250px;
-  height: 250px;
-  display: block;
-}
-
-.cajitaImagen {
+.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
   position: relative;
   width: 250px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
 }
-
-.textoprueba1 {
+.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -1172,11 +1108,44 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   color: rgba(191, 85, 124, 0);
   text-decoration: none;
 }
-
-.cajitaImagen:hover .textoprueba1 {
+.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen:hover .textoprueba1 {
   height: 12%;
   color: slategrey;
   text-decoration: none;
+}
+
+/*suelto*/
+.accordion-collapse {
+  background-color: rgba(191, 85, 124, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.accordion-collapse .hipervinculosTextoProductos {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30%;
+  padding-right: 25%;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+.accordion-collapse .hipervinculosTextoProductos:hover {
+  background-color: rgba(191, 85, 124, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.imagenProductoListado {
+  width: 250px;
+  height: 250px;
+  display: block;
 }
 
 /*CLIENTES*************************************************************************/
