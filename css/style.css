@@ -338,14 +338,22 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   font-size: 0.75rem;
 }
 
+.carousel-indicators {
+  z-index: 100;
+  color: red;
+}
+
 .carousel-inner {
   display: flex;
-  margin-top: 3%;
+  margin-top: 1%;
   position: relative;
   z-index: 3 !important;
 }
 .carousel-inner .d-block {
   width: 100%;
+}
+.carousel-inner .carousel-control-next {
+  z-index: 500;
 }
 
 /***************************************************MIXIN REGLAS*********************************************************************************/
@@ -540,7 +548,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .bannerFondoProductos {
   width: 100%;
   height: 800px;
-  margin-top: 3%;
+  margin-top: 1%;
   display: flex;
   justify-content: space-between;
 }
