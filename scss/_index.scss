@@ -7,18 +7,20 @@
         width: 100%;
     }
 }
+/***************************************************MIXIN REGLAS*********************************************************************************/
+@mixin cajasindex ($direction, $justify, $margin-top, $width) {
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    margin-top:$margin-top;
+}
+/************************************************************************************************************************************************/
 .cajaBienvenidos{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    margin-top: 5%;
+    @include cajasindex(row,center,5%,100%);
     .cajaTexto{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        @include cajasindex(column,space-between,0%,50%);
         padding-right: 5%;
         margin-left: 5%;
-        justify-content: space-between;
         border-top-color: rgba(0, 0, 0, .25);
         border-top-style: solid;
         border-width: 1px;
@@ -41,29 +43,20 @@
         }
     }
     .cajaImgBienvenidos{
-        width: 50%;
-        display: flex;
-        justify-content: center;
+        @include cajasindex(row,left,0%,50%);
+        margin-right: 5%;
         .cajaImgBienvenidos--foto{
-            display: flex;
-            width: 100%;
+            @include cajasindex(row,center,0%,100%);
             height: auto;
             padding-right: 5%;
         }        
     }
 }
 .cajaMasInformacion{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
+    @include cajasindex(row,center,5%,100%);
     .cajaQueHacemos{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding-right: 5%;
+        @include cajasindex(column,space-between,0%,50%);
         margin-left: 5%;
-        justify-content: space-between;
         border-top-color: rgba(0, 0, 0, .25);
         border-bottom-color: rgba(0, 0, 0, .25);
         border-bottom-style: solid;
@@ -81,11 +74,9 @@
             padding-bottom: 2%;
         }
         .cajaQueHacemos--abajo{
-            display: flex;
-            flex-direction: row;
+            @include cajasindex(row,right,0%,100%);
             .cajaQueHacemos--abajo--bis{
-                display: flex;
-                flex-direction: column;
+                @include cajasindex(column,center,0%,100%);
                 padding-left: 3%;
                 padding-right: 3%;
                 padding-top: 5%;
@@ -108,8 +99,7 @@
         }
     }
     .cajaQueMateriales{
-        display: flex;
-        flex-direction: column;
+        @include cajasindex(column,left,0%,50%);
         width: 50%;
         border-top-color: rgba(0, 0, 0, .25);
         border-bottom-color: rgba(0, 0, 0, .25);
@@ -130,8 +120,7 @@
             padding-bottom: 2%;
         }
         .cajaQueMateriales--bis{
-            display: flex;
-            flex-direction: column;
+            @include cajasindex(column,left,0%,100%);
             .cajaQueMateriales--abajo{
                 .cajaQueMateriales--abajo--texto{
                     display: block;

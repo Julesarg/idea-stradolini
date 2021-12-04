@@ -348,19 +348,21 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   width: 100%;
 }
 
+/***************************************************MIXIN REGLAS*********************************************************************************/
+/************************************************************************************************************************************************/
 .cajaBienvenidos {
   display: flex;
-  width: 100%;
   flex-direction: row;
+  justify-content: center;
   margin-top: 5%;
 }
 .cajaBienvenidos .cajaTexto {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: space-between;
+  margin-top: 0%;
   padding-right: 5%;
   margin-left: 5%;
-  justify-content: space-between;
   border-top-color: rgba(0, 0, 0, 0.25);
   border-top-style: solid;
   border-width: 1px;
@@ -383,30 +385,33 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   line-height: normal;
 }
 .cajaBienvenidos .cajaImgBienvenidos {
-  width: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 0%;
+  margin-right: 5%;
 }
 .cajaBienvenidos .cajaImgBienvenidos .cajaImgBienvenidos--foto {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0%;
   height: auto;
   padding-right: 5%;
 }
 
 .cajaMasInformacion {
-  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 5%;
 }
 .cajaMasInformacion .cajaQueHacemos {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-right: 5%;
-  margin-left: 5%;
   justify-content: space-between;
+  margin-top: 0%;
+  margin-left: 5%;
   border-top-color: rgba(0, 0, 0, 0.25);
   border-bottom-color: rgba(0, 0, 0, 0.25);
   border-bottom-style: solid;
@@ -427,10 +432,14 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo {
   display: flex;
   flex-direction: row;
+  justify-content: right;
+  margin-top: 0%;
 }
 .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo .cajaQueHacemos--abajo--bis {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 0%;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 5%;
@@ -453,6 +462,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMasInformacion .cajaQueMateriales {
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  margin-top: 0%;
   width: 50%;
   border-top-color: rgba(0, 0, 0, 0.25);
   border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -476,6 +487,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--bis {
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  margin-top: 0%;
 }
 .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--bis .cajaQueMateriales--abajo .cajaQueMateriales--abajo--texto {
   display: block;
@@ -1025,14 +1038,18 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   margin-bottom: 0;
 }
 
+/***************************************************************************MIXIN*********************************************************************************************/
+/*****************************************************************************************************************************************************************************/
 .fondoContacto {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  align-items: none;
+  justify-content: center;
   background-image: url(../images/contacto/fondogato.png);
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
-  height: 800px;
-  width: 100%;
   padding-top: 0%;
   margin-top: 0%;
   animation-name: efecto1contacto;
@@ -1040,19 +1057,18 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-duration: 2s;
 }
 .fondoContacto .cajaDuda {
+  display: flex;
   height: 80px;
   width: 97%;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 4%;
   padding-left: 6%;
 }
 .fondoContacto .cajaDuda .textoDuda {
-  display: flex;
+  font-family: "Roboto", sans-serif;
   color: #545454;
   font-size: 5rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   padding-right: 1%;
   animation-name: efecto1contacto;
@@ -1060,16 +1076,16 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-duration: 3s;
 }
 .fondoContacto .cajaComentario {
+  display: flex;
   height: 80px;
   width: 90%;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .fondoContacto .cajaComentario .textoComentario {
+  font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.3);
   font-size: 4rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-left: 26%;
   animation-name: efecto1contacto;
@@ -1077,15 +1093,16 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-duration: 3.5s;
 }
 .fondoContacto .cajaAyuda {
-  width: 73%;
   display: flex;
+  height: 40px;
+  width: 73%;
   align-items: center;
   justify-content: flex-end;
 }
 .fondoContacto .cajaAyuda .textoAyuda {
+  font-family: "Roboto", sans-serif;
   color: #9e9d9d;
   font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   padding-right: 1%;
   animation-name: texto3;
@@ -1095,14 +1112,14 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .fondoContacto .bottomText {
   display: flex;
   height: 600px;
-  justify-content: flex-end;
+  width: 100%;
   align-items: flex-end;
+  justify-content: flex-end;
 }
 .fondoContacto .bottomText .textoBottom {
-  display: flex;
+  font-family: "Roboto", sans-serif;
   color: #9e9d9d;
   font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   padding-right: 1%;
   animation-name: texto4;

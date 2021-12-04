@@ -1,30 +1,36 @@
+/***************************************************************************MIXIN*********************************************************************************************/
+@mixin  cajascontacto($height, $width, $align-items, $justify-content){
+    display:flex;
+    height:$height;
+    width:$width;
+    align-items:$align-items;
+    justify-content:$justify-content;    
+}
+@mixin textocontactoup($color, $font-size, $font-weight){
+    font-family: 'Roboto', sans-serif;
+    color:$color;
+    font-size:$font-size;
+    font-weight:$font-weight;
+}
+/*****************************************************************************************************************************************************************************/
+
 .fondoContacto{
+    @include cajascontacto(800px,100%,none,center);
     background-image: url(../images/contacto/fondogato.png);
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
     flex-direction: column;
-    height: 800px;
-    width: 100%;
     padding-top: 0%;
     margin-top: 0%;
     animation-name: efecto1contacto;
     animation-iteration-count: 1;
     animation-duration: 2s;
     .cajaDuda{
-        height: 80px;
-        width: 97%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        @include cajascontacto(80px,97%,center, flex-start);
         margin-top: 4%;
         padding-left: 6%;
         .textoDuda{
-            display: flex;
-            color: #545454;
-            font-size: 5rem;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
+            @include textocontactoup(#545454,5rem,500);
             padding-right: 1%;
             animation-name: efecto1contacto;
             animation-iteration-count: 1;
@@ -32,16 +38,9 @@
         }
     }
     .cajaComentario{
-        height: 80px;
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        @include cajascontacto(80px,90%,center,flex-start);
         .textoComentario{
-            color: rgba(0, 0, 0, .3);
-            font-size: 4rem;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
+            @include textocontactoup(rgba(0, 0, 0, .3),4rem,500);
             margin-left: 26%;
             animation-name: efecto1contacto;
             animation-iteration-count: 1;
@@ -49,15 +48,9 @@
         }
     }
     .cajaAyuda{
-        width: 73%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        @include cajascontacto(40px,73%,center,flex-end);
         .textoAyuda{
-            color: #9e9d9d;
-            font-size: 2rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 400;
+            @include textocontactoup(#9e9d9d,2rem,400);
             padding-right: 1%;
             animation-name: texto3;
             animation-iteration-count: 1;
@@ -65,16 +58,9 @@
         }
     }
     .bottomText{
-        display: flex;
-        height: 600px;
-        justify-content: flex-end;
-        align-items: flex-end;
+        @include cajascontacto(600px,100%,flex-end,flex-end);
         .textoBottom{
-            display: flex;
-            color: #9e9d9d;
-            font-size: 2rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 400;
+            @include textocontactoup(#9e9d9d,2rem,400);
             padding-right: 1%;
             animation-name: texto4;
             animation-iteration-count: 1;
