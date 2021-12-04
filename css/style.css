@@ -950,11 +950,13 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   object-fit: cover;
 }
 
+/************************MIXIN*********************************/
+/*************************************************************/
 .cajaMatPrima {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 5%;
   font-family: "Cabin", sans-serif;
   padding-bottom: 3.5%;
   margin-left: 100px;
@@ -966,8 +968,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMatPrima h2 {
   font-size: 1.5rem;
   opacity: 0.7;
-  word-spacing: 1.5px;
   margin-bottom: 0.8%;
+  word-spacing: 1.5px;
 }
 .cajaMatPrima h4 {
   font-size: 1.2rem;
@@ -1036,6 +1038,120 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMatPrima .tab-content .fade .cajaMatPrimaInfo .textoPropiedades {
   width: 90%;
   margin-bottom: 0;
+}
+
+/*STOCK DE MATERIALES*/
+.contenedorStock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 1%;
+}
+.contenedorStock h2 {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  margin-bottom: 0.8%;
+  text-align: center;
+  word-spacing: 1.5px;
+}
+.contenedorStock h4 {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  margin-bottom: 1%;
+  display: block;
+  text-align: center;
+}
+
+.contenedorGrid {
+  display: grid;
+  margin-left: 0%;
+  margin-bottom: 5%;
+  justify-items: center;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  width: 100%;
+  height: auto;
+}
+.contenedorGrid .stockIndividual {
+  position: relative;
+  overflow: hidden;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.contenedorGrid .stockIndividual * {
+  transition: all 0.6s ease;
+}
+.contenedorGrid .stockIndividual img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  transition: opacity 0.35s;
+}
+.contenedorGrid .stockIndividual div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.contenedorGrid .stockIndividual div h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+.contenedorGrid .stockIndividual div p {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+.contenedorGrid .stockIndividual div h6 {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+  color: lightgreen;
+}
+.contenedorGrid .stockIndividual div .sinStock {
+  color: red;
+}
+.contenedorGrid .stockIndividual:after {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.75;
+  transform: skew(-45deg) scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.contenedorGrid .stockIndividual:hover:after, .contenedorGrid .stockIndividual.hover:after {
+  transform: skew(-45deg) scaleX(1);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contenedorGrid .stockIndividual:hover div h2, .contenedorGrid .stockIndividual.hover div h2, .contenedorGrid .stockIndividual:hover div p, .contenedorGrid .stockIndividual.hover div p, .contenedorGrid .stockIndividual:hover div h6, .contenedorGrid .stockIndividual.hover div h6 {
+  transform: translate3d(0%, 0%, 0);
+  transition-delay: 0.2s;
+}
+.contenedorGrid .stockIndividual:hover div h2, .contenedorGrid .stockIndividual.hover div h2 {
+  opacity: 1;
+}
+.contenedorGrid .stockIndividual:hover div p, .contenedorGrid .stockIndividual.hover div p {
+  opacity: 0.7;
+}
+.contenedorGrid .stockIndividual:hover div h6, .contenedorGrid .stockIndividual.hover div h6 {
+  opacity: 0.7;
 }
 
 /***************************************************************************MIXIN*********************************************************************************************/
