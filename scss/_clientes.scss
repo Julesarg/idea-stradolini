@@ -1,3 +1,195 @@
+/****************************************MIXIN*************************************************************************************************/
+@mixin fotosexperiencia ($filter){
+    height:300px;
+    width:25%;
+    z-index: 20;
+    transition: .3s;
+    filter: $filter;
+}
+@mixin fotosexperienciahover{    
+    transform: scale(1.1);
+    z-index: 50;
+    filter: grayscale(0%) brightness(100%);
+}
+@mixin h2h4 ($font-size,$opacity, $margin-bottom){
+    font-size:$font-size;
+    opacity:$opacity;
+    margin-bottom:$margin-bottom;
+    text-align:center;
+}
+/**********************************************************************************************************************************************/
+h2{
+    @include h2h4(1.5rem,0.7,0.8%);
+    word-spacing: 1.5px;
+    margin-top: 5%
+}
+h4{
+    @include h2h4(1.2rem,0.5,2%);
+}
+.contenedorExperiencias{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-left: 4%;
+    margin-right: 4%;
+    .experiencia1{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 300px;
+        align-items: center;
+        margin-bottom: 4%;
+        align-self: center;
+        .experiencia1--caja1{
+            display: flex;
+            width: 40%;
+            height: 80%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-width: 1px;
+            border-top-color: rgba(0, 0, 0, 0.2);
+            border-bottom-color: rgba(0, 0, 0, 0.2);    
+            img{
+                height: auto;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .experiencia1--cajaTexto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 60%;
+                margin-left: 30px;               
+                .nota{
+                    font-family: 'Cabin', sans-serif;
+                    font-size: 1.2rem;
+                    color: rgba(0, 0, 0, 0.4);
+                    font-style: italic;            
+                }
+                .firma{
+                    font-family: 'Cabin', sans-serif;
+                    font-size: 1.4rem;
+                    text-align: right;
+                    opacity: 0.8;
+                }
+            }       
+        }
+        .experiencia1--caja2{
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            width: 60%;
+            justify-content: flex-start;
+            .experiencia1--fotos--11{
+                @include fotosexperiencia (grayscale(100%) brightness(80%));
+            }
+            .experiencia1--fotos--12{
+                @include fotosexperiencia (grayscale(100%) brightness(60%));
+            }
+            .experiencia1--fotos--13{
+                @include fotosexperiencia (grayscale(100%) brightness(40%));
+            }
+            .experiencia1--fotos--14{
+                @include fotosexperiencia (grayscale(100%) brightness(20%));
+            }
+            .experiencia1--fotos--11:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia1--fotos--12:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia1--fotos--13:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia1--fotos--14:hover{
+                @include fotosexperienciahover();
+            }
+        }
+    }
+    .experiencia2{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 300px;
+        align-items: center;
+        margin-bottom: 4%;
+        align-self: center;
+        .experiencia2--caja2{
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            width: 60%;
+            justify-content: flex-start;
+            .experiencia2--fotos--11{
+                @include fotosexperiencia (grayscale(100%) brightness(80%));
+            }
+            .experiencia2--fotos--12{
+                @include fotosexperiencia (grayscale(100%) brightness(60%));
+            }
+            .experiencia2--fotos--13{
+                @include fotosexperiencia (grayscale(100%) brightness(40%));
+            }
+            .experiencia2--fotos--14{
+                @include fotosexperiencia (grayscale(100%) brightness(20%));
+            }
+            .experiencia2--fotos--11:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia2--fotos--12:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia2--fotos--13:hover{
+                @include fotosexperienciahover();
+            }
+            .experiencia2--fotos--14:hover{
+                @include fotosexperienciahover();
+            }
+        }    
+        .experiencia2--caja1{
+            display: flex;
+            width: 40%;
+            height: 80%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-width: 1px;
+            border-top-color: rgba(0, 0, 0, 0.2);
+            border-bottom-color: rgba(0, 0, 0, 0.2);
+            justify-content: flex-end;
+            .experiencia2--cajaTexto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 60%;
+                margin-left: 30px;
+                padding-right: 20px;               
+                .nota{
+                    font-family: 'Cabin', sans-serif;
+                    font-size: 1.2rem;
+                    color: rgba(0, 0, 0, 0.4);
+                    font-style: italic;            
+                }
+                .firma{
+                    font-family: 'Cabin', sans-serif;
+                    font-size: 1.4rem;
+                    text-align: right;
+                    opacity: 0.8;
+                }
+            }
+            img{
+                height: auto;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+}
+ 
+
+
 
 
 
