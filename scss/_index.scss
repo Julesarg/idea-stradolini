@@ -20,6 +20,18 @@
     flex-direction:$direction;
     justify-content:$justify;
     margin-top:$margin-top;
+    width:$width;
+    overflow: hidden;
+}
+@mixin textoTitulos{
+    display: block;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .4);
+    letter-spacing: -4px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 /************************************************************************************************************************************************/
 .cajaBienvenidos{
@@ -53,17 +65,18 @@
         @include cajasindex(row,left,0%,50%);
         margin-right: 5%;
         .cajaImgBienvenidos--foto{
-            @include cajasindex(row,center,0%,100%);
-            height: auto;
+            @include cajasindex(row,center,0%,auto);
+            height: fit-content;
             padding-right: 5%;
         }        
     }
 }
 .cajaMasInformacion{
     @include cajasindex(row,center,5%,100%);
+
     .cajaQueHacemos{
         @include cajasindex(column,space-between,0%,50%);
-        margin-left: 5%;
+        margin-left: 3%;
         border-top-color: rgba(0, 0, 0, .25);
         border-bottom-color: rgba(0, 0, 0, .25);
         border-bottom-style: solid;
@@ -71,14 +84,7 @@
         border-width: 1px;
         padding-bottom: 5%;
         .textoTitulos{
-            display: block;
-            font-size: 3rem;
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgba(0, 0, 0, .4);
-            letter-spacing: -4px;
-            text-align: center;
-            padding-top: 2%;
-            padding-bottom: 2%;
+            @include textoTitulos;
         }
         .cajaQueHacemos--abajo{
             @include cajasindex(row,right,0%,100%);
@@ -105,30 +111,27 @@
             }
         }
     }
+
     .cajaQueMateriales{
-        @include cajasindex(column,left,0%,50%);
-        width: 50%;
+        @include cajasindex(column,space-between,0%,50%);
+        margin-right: 3%;
         border-top-color: rgba(0, 0, 0, .25);
         border-bottom-color: rgba(0, 0, 0, .25);
         border-top-style: solid;
         border-bottom-style: solid;
-        border-width: 1px;
-        margin-right: 5%;
-        padding-left: 5%;
+        border-width: 1px;  
         padding-bottom: 5%;
         .textoTitulos{
-            display: block;
-            font-size: 3rem;
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgba(0, 0, 0, .4);
-            letter-spacing: -4px;
-            text-align: center;
-            padding-top: 2%;
-            padding-bottom: 2%;
+            @include textoTitulos;
         }
-        .cajaQueMateriales--bis{
-            @include cajasindex(column,left,0%,100%);
-            .cajaQueMateriales--abajo{
+        .cajaQueMateriales--abajo{
+            @include cajasindex(column,center,0%,100%);  
+            align-items: center; 
+            img{
+                max-width: fit-content;
+            }         
+            .cajaQueMateriales--abajo--bis{
+                @include cajasindex(column,center,0%,100%);
                 .cajaQueMateriales--abajo--texto{
                     display: block;
                     font-size: 1.2rem;
@@ -145,7 +148,7 @@
                     padding-top: 1%;
                     padding-left: 70%;
                 }
-            }
+            }        
         }
     }
 }
