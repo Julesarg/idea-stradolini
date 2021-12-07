@@ -889,22 +889,139 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     justify-items: center;
     padding-top: 25px;
   }
-
-  /*ITEMS*/
-  .cajitaImagen {
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
     height: 200px;
-    width: 200px !important;
+    width: 200px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
+    width: 200px;
+    height: 200px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
+    top: 100%;
+    font-size: 1.1rem;
   }
 
-  .imagenProductoListado {
-    width: 200px !important;
-    height: 200px !important;
+  /***********************CLIENTES**************************************/
+  div.h2h4Clientes {
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .textoprueba1 {
-    top: 100% !important;
-    font-size: 1.1rem !important;
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom-style: double;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-top-style: double;
+    border-top-color: rgba(0, 0, 0, 0.2);
   }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 .experiencia1--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+  section.contenedorExperiencias .experienciaB {
+    display: none;
+  }
+  section.contenedorExperiencias .experienciaC {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 .experienciaC--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 .experiencia3--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+
+  /******************MATERIALES*****************************************************/
 }
 /*bootstrap correciones*/
 .bannerFooterTexto:hover {
@@ -1215,11 +1332,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /**********************************************************************************************************************************************/
 .h2h4Clientes {
   margin-top: 5%;
-  border-bottom-style: solid;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
 }
 
 .h2h4Clientes h2 {
@@ -1243,7 +1358,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   margin-top: 5%;
   align-items: center;
 }
-.contenedorExperiencias .experiencia {
+.contenedorExperiencias .experiencia, .contenedorExperiencias .experienciaB, .contenedorExperiencias .experienciaC {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -1251,16 +1366,19 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   align-items: center;
   margin-bottom: 4%;
 }
-.contenedorExperiencias .experiencia .experiencia--caja2 {
+.contenedorExperiencias .experiencia .experiencia--caja2, .contenedorExperiencias .experienciaB .experiencia--caja2, .contenedorExperiencias .experienciaC .experiencia--caja2 {
   display: flex;
   width: 60%;
   height: 100%;
 }
-.contenedorExperiencias .experiencia .experiencia--caja2--2 {
+.contenedorExperiencias .experiencia .experiencia--caja2--2, .contenedorExperiencias .experienciaB .experiencia--caja2--2, .contenedorExperiencias .experienciaC .experiencia--caja2--2 {
   display: flex;
   width: 60%;
   height: 100%;
   justify-content: flex-end;
+}
+.contenedorExperiencias .experienciaC {
+  display: none;
 }
 
 .nota {
@@ -1301,7 +1419,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   margin-left: 30px;
 }
 
-.experiencia2--caja1 {
+.experienciaB--caja1 {
   display: flex;
   width: 40%;
   height: 80%;
@@ -1314,7 +1432,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   border-bottom-right-radius: 20px;
   justify-content: flex-end;
 }
-.experiencia2--caja1 .experiencia2--cajaTexto {
+.experienciaB--caja1 .experiencia2--cajaTexto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1322,9 +1440,34 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   margin-left: 30px;
   padding-right: 20px;
 }
-.experiencia2--caja1 img {
+.experienciaB--caja1 img {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.experienciaC--caja1 {
+  display: flex;
+  width: 40%;
+  height: 80%;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.experienciaC--caja1 img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.experienciaC--caja1 .experienciaC--cajaTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-left: 30px;
+  margin-left: 30px;
 }
 
 .experiencia3--caja1 {

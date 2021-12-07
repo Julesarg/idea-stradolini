@@ -37,11 +37,9 @@
 
 .h2h4Clientes{
     margin-top: 5%;
-    border-bottom-style: solid;
     margin-left: 100px;
     margin-right: 100px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 10px;
 }
 .h2h4Clientes h2{
     @include h2h4(1.5rem,0.7,0.8%);
@@ -56,7 +54,7 @@
     flex-direction: column;
     margin-top: 5%;
     align-items: center;
-    .experiencia{
+    .experiencia, .experienciaB, .experienciaC{
         display:flex;
         flex-direction: row;
         width: 80%;
@@ -75,6 +73,10 @@
             justify-content: flex-end;
         }
     }
+    .experienciaC{
+        display: none;
+    }
+ 
 }
 .nota{
     font-family: 'Cabin', sans-serif;
@@ -101,7 +103,7 @@
         @include experienciacajatexto;
     }       
 }
-.experiencia2--caja1{
+.experienciaB--caja1{
     @include experienciacajacontexto;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;            
@@ -115,6 +117,19 @@
         border-bottom-right-radius: 20px;
     }
 }
+.experienciaC--caja1{
+    @include experienciacajacontexto;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;    
+     img{
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+     }
+     .experienciaC--cajaTexto{
+         @include experienciacajatexto;
+         margin-left: 30px;               
+     }       
+ }
 .experiencia3--caja1{
    @include experienciacajacontexto;
     border-top-left-radius: 20px;
