@@ -45,7 +45,7 @@ main {
   display: none;
 }
 
-/*BARRA DE NAVEGACION*****************************************************************/
+/*BARRA DE NAVEGACION************************************/
 .navegacion {
   background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
   width: 100%;
@@ -135,7 +135,7 @@ nav ul li a {
     transform: translateY(0px);
   }
 }
-/*Fondo general*/
+/*FONDO GENERAL*/
 .fondoHuellas {
   background-image: url(../images/main/fondo.png);
 }
@@ -338,6 +338,107 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   font-size: 0.75rem;
 }
 
+/*RESPONSIVE 320*/
+@media screen and (max-width: 320px) {
+  .headerBox {
+    height: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .headerBox .logoHeader {
+    position: relative;
+    bottom: 4px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    z-index: 90;
+    animation-name: prueba;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  .headerBox .headerBoxText {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navegacion label {
+    display: flex;
+  }
+  .navegacion label img {
+    width: 20px;
+    height: 20px;
+  }
+  .navegacion nav {
+    position: absolute;
+    background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    margin-top: -100%;
+    transition: 0.5s;
+    z-index: 80;
+  }
+  .navegacion nav ul {
+    flex-direction: column;
+  }
+  .navegacion nav ul li {
+    justify-content: left;
+    padding-left: 20px;
+    height: 30px;
+  }
+  .navegacion nav ul li .textoNavBar {
+    font-size: 0.85rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .LiImagen {
+    display: none;
+  }
+
+  #hamburguesa:checked ~ nav {
+    margin-top: 0;
+  }
+
+  footer .cajaGde {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .cajaGde .cajaIzq {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+  }
+  footer .cajaGde .cajaIzq .cajaHorario {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  footer .cajaGde .cajaCentro {
+    margin: 0%;
+    width: 90%;
+  }
+  footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales {
+    flex-direction: column;
+  }
+  footer .cajaGde .cajaDer {
+    align-items: center;
+    margin-right: 0%;
+    margin-top: 4%;
+    width: 33%;
+  }
+  footer .cajaGde .cajaDer .tuMensaje {
+    text-align: center;
+  }
+  footer .cajaGde .cajaDer .cajaGato {
+    top: 1px;
+  }
+  footer .contenedorCopyRight {
+    justify-content: center;
+  }
+}
+/*MIXIN REGLAS*/
+/***************************************************************************************************************************/
 .carousel-indicators {
   z-index: 100;
   color: red;
@@ -356,8 +457,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   z-index: 500;
 }
 
-/***************************************************MIXIN REGLAS*********************************************************************************/
-/************************************************************************************************************************************************/
 .cajaBienvenidos {
   display: flex;
   flex-direction: row;
@@ -569,68 +668,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   height: 80px;
 }
 
-/*************************************************************************************************************************************************************/
+/*RESPONSIVE 320*/
 @media screen and (max-width: 320px) {
-  /*header y navbar*/
-  .headerBox {
-    height: 20px;
-    z-index: 100;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .headerBox .logoHeader {
-    position: relative;
-    bottom: 4px;
-    width: 80px;
-    height: 80px;
-    display: block;
-    z-index: 90;
-    animation-name: prueba;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-  }
-  .headerBox .headerBoxText {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .navegacion label {
-    display: flex;
-  }
-  .navegacion label img {
-    width: 20px;
-    height: 20px;
-  }
-  .navegacion nav {
-    position: absolute;
-    background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
-    margin-top: -100%;
-    transition: 0.5s;
-    z-index: 80;
-  }
-  .navegacion nav ul {
-    flex-direction: column;
-  }
-  .navegacion nav ul li {
-    justify-content: left;
-    padding-left: 20px;
-    height: 30px;
-  }
-  .navegacion nav ul li .textoNavBar {
-    font-size: 0.85rem;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
-  .LiImagen {
-    display: none;
-  }
-
-  #hamburguesa:checked ~ nav {
-    margin-top: 0;
-  }
-
-  /*slideshow*/
   .carousel {
     margin-top: 5%;
     justify-items: center;
@@ -639,7 +678,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     display: none;
   }
 
-  /*bienvenidos*/
   .cajaBienvenidos {
     display: flex;
     width: 100%;
@@ -675,7 +713,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     padding: 0;
   }
 
-  /*que hacemos y que materiales*/
   .cajaMasInformacion {
     flex-direction: column;
   }
@@ -732,7 +769,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     padding-top: 10px;
   }
 
-  /*pagos y envios*/
   .cajaPagoYenvios h2 {
     font-size: 1rem;
     text-align: center;
@@ -746,338 +782,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     width: auto;
     height: 30px;
   }
-
-  /*footer*/
-  footer .cajaGde {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .cajaGde .cajaIzq {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2%;
-    width: 100%;
-  }
-  footer .cajaGde .cajaIzq .cajaHorario {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-  footer .cajaGde .cajaCentro {
-    margin: 0%;
-    width: 90%;
-  }
-  footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales {
-    flex-direction: column;
-  }
-  footer .cajaGde .cajaDer {
-    align-items: center;
-    margin-right: 0%;
-    margin-top: 4%;
-    width: 33%;
-  }
-  footer .cajaGde .cajaDer .tuMensaje {
-    text-align: center;
-  }
-  footer .cajaGde .cajaDer .cajaGato {
-    top: 1px;
-  }
-  footer .contenedorCopyRight {
-    justify-content: center;
-  }
-
-  /*PRODUCTOS*/
-  div.bannerFondoProductos {
-    height: auto;
-  }
-  div.bannerFondoProductos .bannerFoto1 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto2 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto3 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto4 {
-    width: 25%;
-  }
-
-  div.bannerCajaTexto {
-    bottom: 50px;
-    height: 50px;
-  }
-  div.bannerCajaTexto .bannerFooterTexto {
-    font-size: 1.5rem;
-  }
-
-  div.separador {
-    display: none;
-  }
-
-  /*Contenedor general abajo nav y productos*************************************/
-  section.productosContenedor {
-    flex-direction: column;
-  }
-  section.productosContenedor .cajaMenuIzq {
-    width: 100%;
-    border-radius: 0px;
-    margin-left: 0%;
-    margin-top: -20px;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    box-shadow: none;
-  }
-  section.productosContenedor .cajaMenuIzq .textoProductos {
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    padding-bottom: 5px;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button::after {
-    display: none;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button:hover {
-    color: rgba(0, 0, 0, 0.25);
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse {
-    width: 100%;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse .hipervinculosTextoProductos {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuDer {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 15%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
-    display: block;
-    margin-top: 25px;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
-  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
-    font-size: 1.4rem;
-    padding-left: 0px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 50px;
-    padding-right: 0%;
-    justify-items: center;
-    padding-top: 25px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
-    height: 200px;
-    width: 200px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
-    width: 200px;
-    height: 200px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
-    top: 100%;
-    font-size: 1.1rem;
-  }
-
-  /***********************CLIENTES**************************************/
-  div.h2h4Clientes {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  section.contenedorExperiencias .experiencia {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    border-bottom-style: double;
-    border-bottom-color: rgba(0, 0, 0, 0.2);
-    border-top-style: double;
-    border-top-color: rgba(0, 0, 0, 0.2);
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 .experiencia1--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 {
-    width: 100%;
-    flex-direction: row;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
-    filter: brightness(100%);
-    width: 50%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1);
-  }
-  section.contenedorExperiencias .experienciaB {
-    display: none;
-  }
-  section.contenedorExperiencias .experienciaC {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 0%;
-    margin-bottom: 10%;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 .experienciaC--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-direction: row;
-  }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
-    filter: brightness(100%);
-    width: 50%;
-  }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1);
-  }
-  section.contenedorExperiencias .experiencia {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 .experiencia3--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 {
-    width: 100%;
-    flex-direction: row;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
-    filter: brightness(100%);
-    width: 50%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1);
-  }
-
-  /******************MATERIALES*****************************************************/
-  section.cajaMatPrima {
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: center;
-  }
-  section.cajaMatPrima h4 {
-    font-size: 1rem;
-    margin-bottom: 5%;
-  }
-  section.cajaMatPrima .imagenesMaterialesSmall {
-    display: grid;
-    width: 90%;
-    justify-items: center;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    grid-row-gap: 10px;
-  }
-  section.cajaMatPrima .imagenesMaterialesSmall img {
-    width: 80px;
-    height: 80px;
-  }
-  section.cajaMatPrima .cajaMatPrimaInfoSmall {
-    display: flex;
-  }
-  section.cajaMatPrima nav {
-    display: none;
-  }
-  section.cajaMatPrima .tab-content {
-    display: none;
-  }
-
-  section.contenedorStock {
-    margin-bottom: 5%;
-  }
-  section.contenedorStock .contenedorGrid {
-    grid-template-columns: repeat(auto-fill, 90px);
-    grid-column-gap: 8px;
-  }
-  section.contenedorStock .contenedorGrid .stockIndividual {
-    width: 80px;
-    height: 80px;
-  }
-  section.contenedorStock .contenedorGrid .stockIndividual img {
-    width: 80px;
-    height: 80px;
-  }
-  section.contenedorStock .contenedorGrid .stockIndividual div p {
-    font-size: 0.75rem;
-  }
-  section.contenedorStock .contenedorGrid .stockIndividual div h2 {
-    font-size: 1rem;
-  }
-  section.contenedorStock .contenedorGrid .stockIndividual div h6 {
-    font-size: 0.75rem;
-  }
 }
+/*MIXIN REGLAS*/
+/***************************************************************************************************************************/
 /*bootstrap correciones*/
 .bannerFooterTexto:hover {
   color: white;
@@ -1383,15 +1090,129 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: block;
 }
 
-/****************************************MIXIN*************************************************************************************************/
-/**********************************************************************************************************************************************/
+/*RESPONSIVE 320*/
+@media screen and (max-width: 320px) {
+  div.bannerFondoProductos {
+    height: auto;
+  }
+  div.bannerFondoProductos .bannerFoto1 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto2 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto3 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto4 {
+    width: 25%;
+  }
+
+  div.bannerCajaTexto {
+    bottom: 50px;
+    height: 50px;
+  }
+  div.bannerCajaTexto .bannerFooterTexto {
+    font-size: 1.5rem;
+  }
+
+  div.separador {
+    display: none;
+  }
+
+  section.productosContenedor {
+    flex-direction: column;
+  }
+  section.productosContenedor .cajaMenuIzq {
+    width: 100%;
+    border-radius: 0px;
+    margin-left: 0%;
+    margin-top: -20px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    box-shadow: none;
+  }
+  section.productosContenedor .cajaMenuIzq .textoProductos {
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button::after {
+    display: none;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button:hover {
+    color: rgba(0, 0, 0, 0.25);
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse {
+    width: 100%;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse .hipervinculosTextoProductos {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuDer {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 15%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
+    display: block;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
+    font-size: 1.4rem;
+    padding-left: 0px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding-right: 0%;
+    justify-items: center;
+    padding-top: 25px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
+    height: 200px;
+    width: 200px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
+    width: 200px;
+    height: 200px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
+    top: 100%;
+    font-size: 1.1rem;
+  }
+}
+/*MIXIN REGLAS*/
+/***************************************************************************************************************************/
 .h2h4Clientes {
   margin-top: 5%;
   margin-left: 100px;
   margin-right: 100px;
   padding-bottom: 10px;
 }
-
 .h2h4Clientes h2 {
   font-size: 1.5rem;
   opacity: 0.7;
@@ -1399,7 +1220,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   text-align: center;
   word-spacing: 1.5px;
 }
-
 .h2h4Clientes h4 {
   font-size: 1.2rem;
   opacity: 0.5;
@@ -1602,6 +1422,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   filter: grayscale(0%) brightness(100%);
 }
 
+/*AUN NO TERMINADO*/
 .grid {
   display: flex;
   width: 100%;
@@ -1716,8 +1537,128 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   object-fit: cover;
 }
 
-/************************MIXIN*********************************/
-/*************************************************************/
+/*RESPONSIVE 320*/
+@media screen and (max-width: 320px) {
+  div.h2h4Clientes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom-style: double;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-top-style: double;
+    border-top-color: rgba(0, 0, 0, 0.2);
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 .experiencia1--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+  section.contenedorExperiencias .experienciaB {
+    display: none;
+  }
+  section.contenedorExperiencias .experienciaC {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 .experienciaC--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 .experiencia3--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 100%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    filter: brightness(100%);
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1);
+  }
+}
+/*MIXIN REGLAS*/
+/***************************************************************************************************************************/
 .cajaMatPrima {
   display: flex;
   flex-direction: column;
@@ -1937,8 +1878,66 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   opacity: 0.7;
 }
 
-/***************************************************************************MIXIN*********************************************************************************************/
-/*****************************************************************************************************************************************************************************/
+/*RESPONSIVE 320*/
+@media screen and (max-width: 320px) {
+  section.cajaMatPrima {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  section.cajaMatPrima h4 {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  section.cajaMatPrima .imagenesMaterialesSmall {
+    display: grid;
+    width: 90%;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 10px;
+  }
+  section.cajaMatPrima .imagenesMaterialesSmall img {
+    width: 80px;
+    height: 80px;
+  }
+  section.cajaMatPrima .cajaMatPrimaInfoSmall {
+    display: flex;
+  }
+  section.cajaMatPrima nav {
+    display: none;
+  }
+  section.cajaMatPrima .tab-content {
+    display: none;
+  }
+
+  section.contenedorStock {
+    margin-bottom: 5%;
+  }
+  section.contenedorStock .contenedorGrid {
+    grid-template-columns: repeat(auto-fill, 90px);
+    grid-column-gap: 8px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual {
+    width: 80px;
+    height: 80px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual img {
+    width: 80px;
+    height: 80px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div p {
+    font-size: 0.75rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h2 {
+    font-size: 1rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h6 {
+    font-size: 0.75rem;
+  }
+}
+/*MIXIN REGLAS*/
+/***************************************************************************************************************************/
 .fondoContacto {
   display: flex;
   height: 800px;
@@ -2157,8 +2156,112 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*RESPONSIVE 320*/
+@media screen and (max-width: 320px) {
+  .fondoContacto {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: none;
+    justify-content: flex-start;
+    background-image: url(../images/contacto/fondogato320.png);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-position: top;
+  }
+  .fondoContacto .cajaDuda {
+    display: flex;
+    height: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px;
+  }
+  .fondoContacto .cajaDuda .textoDuda {
+    font-family: "Roboto", sans-serif;
+    color: #545454;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .fondoContacto .cajaComentario {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .fondoContacto .cajaComentario .textoComentario {
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .fondoContacto .cajaAyuda {
+    display: flex;
+    height: auto;
+    width: 73%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .fondoContacto .cajaAyuda .textoAyuda {
+    font-family: "Roboto", sans-serif;
+    color: #9e9d9d;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .fondoContacto .bottomText {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 120px;
+    text-align: center;
+  }
+  .fondoContacto .bottomText .textoBottom {
+    font-family: "Roboto", sans-serif;
+    color: #9e9d9d;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .cajaGral {
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 10%;
+    padding-top: 4%;
+  }
+  .cajaGral .cajaFormIzq {
+    width: 100%;
+    height: auto;
+    font-size: 0.75rem;
+    padding: 2%;
+  }
+  .cajaGral .cajaFormDer {
+    width: 100%;
+    height: 296px;
+    margin-left: 0%;
+    padding: 2%;
+  }
+  .cajaGral .cajaFormDer .enviar {
+    font-size: 0.75rem;
+  }
+  .cajaGral .cajaFormDer .limpiar {
+    font-size: 0.75rem;
+  }
+  .cajaGral ::placeholder {
+    color: rgba(0, 0, 0, 0.53);
+  }
+  .cajaGral textarea {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+  }
+  .cajaGral textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
 /*fin importados*/
-/****RESPONSIVE a corregir****************************************************************/
-/*FIN RESPONSIVE****************************************************************************************************************************************/
 
 /*# sourceMappingURL=style.css.map */
