@@ -1022,6 +1022,61 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
 
   /******************MATERIALES*****************************************************/
+  section.cajaMatPrima {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  section.cajaMatPrima h4 {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  section.cajaMatPrima .imagenesMaterialesSmall {
+    display: grid;
+    width: 90%;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 10px;
+  }
+  section.cajaMatPrima .imagenesMaterialesSmall img {
+    width: 80px;
+    height: 80px;
+  }
+  section.cajaMatPrima .cajaMatPrimaInfoSmall {
+    display: flex;
+  }
+  section.cajaMatPrima nav {
+    display: none;
+  }
+  section.cajaMatPrima .tab-content {
+    display: none;
+  }
+
+  section.contenedorStock {
+    margin-bottom: 5%;
+  }
+  section.contenedorStock .contenedorGrid {
+    grid-template-columns: repeat(auto-fill, 90px);
+    grid-column-gap: 8px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual {
+    width: 80px;
+    height: 80px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual img {
+    width: 80px;
+    height: 80px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div p {
+    font-size: 0.75rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h2 {
+    font-size: 1rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h6 {
+    font-size: 0.75rem;
+  }
 }
 /*bootstrap correciones*/
 .bannerFooterTexto:hover {
@@ -1748,6 +1803,24 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .cajaMatPrima .tab-content .fade .cajaMatPrimaInfo .textoPropiedades {
   width: 90%;
   margin-bottom: 0;
+}
+.cajaMatPrima .cajaMatPrimaInfoSmall {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding: 4%;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.cajaMatPrima .imagenesMaterialesSmall {
+  display: none;
 }
 
 /*STOCK DE MATERIALES*/

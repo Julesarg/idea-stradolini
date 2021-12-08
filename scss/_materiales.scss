@@ -63,8 +63,9 @@
         margin-top: 2%;
         display: flex;
         flex-direction: column;
+        
         .fade {
-            transition: opacity .3s linear;
+            transition: opacity .3s linear; 
             .cajaMatPrimaInfo{
                 display: flex;
                 justify-content: center;
@@ -78,7 +79,7 @@
                 text-align: center;
                 border-radius: 30px;
                 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);   
-                opacity: 1;
+                opacity: 1;            
                 .tituloPropiedades{
                     font-weight: 700;
                     margin-bottom: 0;
@@ -89,6 +90,24 @@
                 }
             }
         }
+    }
+    .cajaMatPrimaInfoSmall{
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(0,0,0,.1);
+        height: auto;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        padding: 4%;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);   
+        opacity: 1;
+    }
+    .imagenesMaterialesSmall{
+        display: none;
     }
 }
 
