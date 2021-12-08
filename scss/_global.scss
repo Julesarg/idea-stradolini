@@ -323,6 +323,125 @@ footer{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE 768*/
+@media screen and (max-width:768px){
+    .headerBox{
+        height: 20px;
+        z-index: 100;
+        display: flex;
+        justify-content: space-evenly;
+        .logoHeader{
+            position: relative;
+            bottom: 8px;
+            width: 100px;
+            height: 100px;
+            display: block;
+            z-index: 90;
+            animation-name: prueba;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+        }
+        .headerBoxText{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    .navegacion{
+        label{
+            display: flex;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        nav{
+            position: absolute;
+            background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+            margin-top: -100%;
+            transition: .5s;
+            z-index: 80;
+            ul{
+                flex-direction: column;
+                li{
+                    justify-content: left;
+                    padding-left: 20px;
+                    height: 40px;
+                    .textoNavBar{
+                        font-size: 0.85rem;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+    .LiImagen{
+        display: none;
+    }
+    #hamburguesa:checked ~ nav{
+        margin-top: 0;
+    }
+    footer{
+        .cajaGde{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 0%;
+            .cajaIzq{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2%;
+                width: 100%;
+                .cajaHorario{
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                }
+            }
+            .cajaCentro{
+                margin: 0%;
+                width: 90%;
+                .cajaDatos{
+                    .cajasIndividuales{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .cajaDer{
+                display: flex;
+                align-items: center; 
+                margin-right: 0%;
+                margin-top: 4%;
+                width: 100%;
+                height: auto;             
+                .tuMensaje{
+                    text-align: center;
+                }
+                .cajaGato{
+                    top: 0px;
+                }
+            }
+        }
+        .contenedorCopyRight{
+            justify-content: center;
+        }
+    }
+}
+
+
+
 /*RESPONSIVE 320*/
 @media screen and (max-width:320px){
     .headerBox{
