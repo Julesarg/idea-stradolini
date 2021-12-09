@@ -2518,6 +2518,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
   section.contenedorStock .contenedorGrid {
     grid-template-columns: repeat(auto-fill, 120px);
+    grid-template-rows: repeat(auto-fill, 120px);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     justify-content: center;

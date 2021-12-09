@@ -330,6 +330,7 @@
         margin-bottom: 5%;
         .contenedorGrid{
             grid-template-columns: repeat(auto-fill, 120px);
+            grid-template-rows: repeat(auto-fill, 120px);
             grid-column-gap: 8px;
             grid-row-gap: 8px;
             justify-content: center;
@@ -343,11 +344,9 @@
                 div{
                     p{
                         font-size: 0.75rem;
-
                     }
                     h2{
                         font-size: 1rem;
-
                     }
                     h6{
                         font-size: 0.75rem;
