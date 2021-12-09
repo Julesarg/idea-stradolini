@@ -280,6 +280,151 @@
         object-fit:cover;
     }
 
+    
+
+/*RESPONSIVE 768*/
+@media screen and (max-width:768px){
+    div.h2h4Clientes{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section.contenedorExperiencias{
+        .experiencia{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            margin-bottom: 10%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            border-bottom-style: double;
+            border-bottom-color: rgba(0, 0, 0, .2);
+            border-top-style: double;
+            border-top-color: rgba(0, 0, 0, .2);
+            .experiencia1--caja1{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                border-top-style: none;
+                border-bottom-style: none;
+                img{
+                    border-radius: 20px;
+                    width: 70%;
+                }
+                .experiencia1--cajaTexto{
+                    width: 90%;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+            .experiencia--caja2{
+                width: 90%;
+                flex-direction: row;
+                .experienciaFotos1, .experienciaFotos2, .experienciaFotos3, .experienciaFotos4{
+                    width: 50%;
+                } 
+                .experienciaFotos1:hover, .experienciaFotos2:hover, .experienciaFotos3:hover, .experienciaFotos4:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .experienciaB{
+            display: none;
+        }
+        .experienciaC{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            margin-bottom: 10%;
+            .experienciaC--caja1{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                border-top-style: none;
+                border-bottom-style: none;
+                img{
+                    border-radius: 20px;
+                    width: 70%;
+                }
+                .experienciaC--cajaTexto{
+                    width: 90%;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+            .experiencia--caja2{
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+                flex-direction: row;
+                .experienciaFotos1, .experienciaFotos2, .experienciaFotos3, .experienciaFotos4{                    
+                    width: 50%;
+                } 
+                .experienciaFotos1:hover, .experienciaFotos2:hover, .experienciaFotos3:hover, .experienciaFotos4:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .experiencia{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            .experiencia3--caja1{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                border-top-style: none;
+                border-bottom-style: none;
+                img{
+                    border-radius: 20px;
+                    width: 70%;
+                }
+                .experiencia3--cajaTexto{
+                    width: 90%;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+            .experiencia--caja2{
+                width: 90%;
+                flex-direction: row;
+                .experienciaFotos1, .experienciaFotos2, .experienciaFotos3, .experienciaFotos4{
+                    width: 50%;
+                } 
+                .experienciaFotos1:hover, .experienciaFotos2:hover, .experienciaFotos3:hover, .experienciaFotos4:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }                        
+    }
+    .experienciaFotos1{
+        @include fotosexperiencia (grayscale(100%) brightness(80%));
+    }
+    .experienciaFotos2{
+        @include fotosexperiencia (grayscale(100%) brightness(60%));
+    }
+    .experienciaFotos3{
+        @include fotosexperiencia (grayscale(100%) brightness(40%));
+    }
+    .experienciaFotos4{
+        @include fotosexperiencia (grayscale(100%) brightness(20%));
+    }
+    .experienciaFotos1:hover{
+        @include fotosexperienciahover();
+    }
+    .experienciaFotos2:hover{
+        @include fotosexperienciahover();
+    }
+    .experienciaFotos3:hover{
+        @include fotosexperienciahover();
+    }
+    .experienciaFotos4:hover{
+        @include fotosexperienciahover();
+    }
+}
+
 /*RESPONSIVE 320*/
 @media screen and (max-width:320px){
     div.h2h4Clientes{

@@ -1328,6 +1328,124 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: block;
 }
 
+/*RESPONSIVE 768*/
+@media screen and (max-width: 768px) {
+  div.bannerFondoProductos {
+    height: auto;
+  }
+  div.bannerFondoProductos .bannerFoto1 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto2 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto3 {
+    width: 25%;
+  }
+  div.bannerFondoProductos .bannerFoto4 {
+    width: 25%;
+  }
+
+  div.bannerCajaTexto {
+    bottom: 50px;
+    height: 50px;
+  }
+  div.bannerCajaTexto .bannerFooterTexto {
+    font-size: 1.5rem;
+  }
+
+  div.separador {
+    display: none;
+  }
+
+  section.productosContenedor {
+    flex-direction: column;
+  }
+  section.productosContenedor .cajaMenuIzq {
+    width: 100%;
+    border-radius: 0px;
+    margin-left: 0%;
+    margin-top: -20px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    box-shadow: none;
+  }
+  section.productosContenedor .cajaMenuIzq .textoProductos {
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button::after {
+    display: none;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button:hover {
+    color: rgba(0, 0, 0, 0.25);
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse {
+    width: 100%;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse .hipervinculosTextoProductos {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  section.productosContenedor .cajaMenuDer {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 15%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
+    display: block;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
+    font-size: 1.4rem;
+    padding-left: 0px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding-right: 0%;
+    justify-items: center;
+    padding-top: 25px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
+    height: 150px;
+    width: 150px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
+    width: 150px;
+    height: 150px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
+    top: 100%;
+    font-size: 1.1rem;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen:hover .textoprueba1 {
+    height: 20%;
+  }
+}
 /*RESPONSIVE 320*/
 @media screen and (max-width: 320px) {
   div.bannerFondoProductos {
@@ -1431,16 +1549,19 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     padding-top: 25px;
   }
   section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
     top: 100%;
     font-size: 1.1rem;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen:hover .textoprueba1 {
+    height: 20%;
   }
 }
 /*MIXIN REGLAS*/
@@ -1775,6 +1896,175 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   object-fit: cover;
 }
 
+/*RESPONSIVE 768*/
+@media screen and (max-width: 768px) {
+  div.h2h4Clientes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom-style: double;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-top-style: double;
+    border-top-color: rgba(0, 0, 0, 0.2);
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia1--caja1 .experiencia1--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 90%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1.2);
+  }
+  section.contenedorExperiencias .experienciaB {
+    display: none;
+  }
+  section.contenedorExperiencias .experienciaC {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experienciaC .experienciaC--caja1 .experienciaC--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
+    width: 50%;
+  }
+  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1.2);
+  }
+  section.contenedorExperiencias .experiencia {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 img {
+    border-radius: 20px;
+    width: 70%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia3--caja1 .experiencia3--cajaTexto {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 {
+    width: 90%;
+    flex-direction: row;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
+    width: 50%;
+  }
+  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
+    transform: scale(1.2);
+  }
+
+  .experienciaFotos1 {
+    display: flex;
+    z-index: 20;
+    transition: 0.1s;
+    filter: grayscale(100%) brightness(80%);
+  }
+
+  .experienciaFotos2 {
+    display: flex;
+    z-index: 20;
+    transition: 0.1s;
+    filter: grayscale(100%) brightness(60%);
+  }
+
+  .experienciaFotos3 {
+    display: flex;
+    z-index: 20;
+    transition: 0.1s;
+    filter: grayscale(100%) brightness(40%);
+  }
+
+  .experienciaFotos4 {
+    display: flex;
+    z-index: 20;
+    transition: 0.1s;
+    filter: grayscale(100%) brightness(20%);
+  }
+
+  .experienciaFotos1:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    filter: grayscale(0%) brightness(100%);
+  }
+
+  .experienciaFotos2:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    filter: grayscale(0%) brightness(100%);
+  }
+
+  .experienciaFotos3:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    filter: grayscale(0%) brightness(100%);
+  }
+
+  .experienciaFotos4:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    filter: grayscale(0%) brightness(100%);
+  }
+}
 /*RESPONSIVE 320*/
 @media screen and (max-width: 320px) {
   div.h2h4Clientes {
@@ -1966,7 +2256,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.1);
-  height: 100px;
+  height: auto;
   width: 100%;
   margin-left: 1%;
   margin-right: 1%;
@@ -2116,6 +2406,139 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   opacity: 0.7;
 }
 
+/*RESPONSIVE 768*/
+@media screen and (max-width: 768px) {
+  .cajaMatPrima {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+    font-family: "Cabin", sans-serif;
+    padding-bottom: 3.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom-style: solid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .cajaMatPrima h2 {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-bottom: 0.8%;
+    word-spacing: 1.5px;
+  }
+  .cajaMatPrima h4 {
+    font-size: 1.2rem;
+    opacity: 0.5;
+    margin-bottom: 2%;
+  }
+  .cajaMatPrima nav .nav-tabs {
+    border-style: none;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link {
+    transition: none;
+    padding: 0;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link .cajaTransicion {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    border: 10px solid transparent;
+    box-shadow: inset 10px 10px 10px 10px #ecccd0;
+    transition: transform 0.4s;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link .cajaTransicion:hover {
+    transform: scale(1.2, 1.2);
+    border: 10px solid rgba(216, 91, 140, 0.3);
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link.active {
+    border-color: none;
+    border-style: none;
+    background: transparent;
+    border-width: 1.5px;
+  }
+  .cajaMatPrima nav .nav-link:focus, .cajaMatPrima nav .nav-tabs .nav-link:hover {
+    border-style: none;
+  }
+  .cajaMatPrima .tab-content {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cajaMatPrima .tab-content .fade {
+    transition: opacity 0.3s linear;
+  }
+  .cajaMatPrima .tab-content .fade .cajaMatPrimaInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+  .cajaMatPrima .tab-content .fade .cajaMatPrimaInfo .tituloPropiedades {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .cajaMatPrima .tab-content .fade .cajaMatPrimaInfo .textoPropiedades {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .cajaMatPrima .cajaMatPrimaInfoSmall {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding: 4%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+  .cajaMatPrima .imagenesMaterialesSmall {
+    display: none;
+  }
+
+  section.contenedorStock {
+    margin-bottom: 5%;
+  }
+  section.contenedorStock .contenedorGrid {
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-column-gap: 8px;
+    justify-content: center;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual {
+    width: 120px;
+    height: 120px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual img {
+    width: 120px;
+    height: 120px;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div p {
+    font-size: 0.75rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h2 {
+    font-size: 1rem;
+  }
+  section.contenedorStock .contenedorGrid .stockIndividual div h6 {
+    font-size: 0.75rem;
+  }
+}
 /*RESPONSIVE 320*/
 @media screen and (max-width: 320px) {
   section.cajaMatPrima {
@@ -2178,13 +2601,13 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /***************************************************************************************************************************/
 .fondoContacto {
   display: flex;
-  height: 800px;
+  height: 40vw;
   width: 100%;
   align-items: none;
   justify-content: center;
   background-image: url(../images/contacto/fondogato.png);
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: 100vw;
   flex-direction: column;
   padding-top: 0%;
   margin-top: 0%;
@@ -2192,71 +2615,59 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-iteration-count: 1;
   animation-duration: 2s;
 }
-.fondoContacto .cajaDuda {
+.fondoContacto div {
+  height: 100%;
+  padding-top: 3%;
   display: flex;
-  height: 80px;
-  width: 97%;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 4%;
-  padding-left: 6%;
+  flex-direction: column;
 }
-.fondoContacto .cajaDuda .textoDuda {
+.fondoContacto div .textoDuda {
   font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
   color: #545454;
-  font-size: 5rem;
+  font-size: 4vw;
   font-weight: 500;
-  padding-right: 1%;
+  height: 4.5vw;
+  padding-left: 3%;
   animation-name: efecto1contacto;
   animation-iteration-count: 1;
   animation-duration: 3s;
 }
-.fondoContacto .cajaComentario {
-  display: flex;
-  height: 80px;
-  width: 90%;
-  align-items: center;
-  justify-content: flex-start;
-}
-.fondoContacto .cajaComentario .textoComentario {
+.fondoContacto div .textoComentario {
   font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
   color: rgba(0, 0, 0, 0.3);
-  font-size: 4rem;
+  font-size: 3vw;
   font-weight: 500;
-  margin-left: 26%;
+  height: 3vw;
+  padding-left: 10%;
   animation-name: efecto1contacto;
   animation-iteration-count: 1;
   animation-duration: 3.5s;
 }
-.fondoContacto .cajaAyuda {
-  display: flex;
-  height: 40px;
-  width: 73%;
-  align-items: center;
-  justify-content: flex-end;
-}
-.fondoContacto .cajaAyuda .textoAyuda {
+.fondoContacto div .textoAyuda {
   font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
   color: #9e9d9d;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 400;
-  padding-right: 1%;
+  padding-left: 50%;
   animation-name: texto3;
   animation-iteration-count: 1;
   animation-duration: 2.5s;
 }
-.fondoContacto .bottomText {
-  display: flex;
-  height: 600px;
-  width: 100%;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.fondoContacto .bottomText .textoBottom {
+.fondoContacto div .textoBottom {
   font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
   color: #9e9d9d;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 400;
+  align-self: flex-end;
+  padding-top: 23%;
   padding-right: 1%;
   animation-name: texto4;
   animation-iteration-count: 1;
@@ -2394,75 +2805,47 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*RESPONSIVE 768*/
+@media screen and (max-width: 768px) {
+  .cajaGral {
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 10%;
+    padding-top: 4%;
+  }
+  .cajaGral .cajaFormIzq {
+    width: 100%;
+    height: auto;
+    font-size: 0.75rem;
+    padding: 2%;
+  }
+  .cajaGral .cajaFormDer {
+    width: 100%;
+    height: 296px;
+    margin-left: 0%;
+    padding: 2%;
+  }
+  .cajaGral .cajaFormDer .enviar {
+    font-size: 0.75rem;
+  }
+  .cajaGral .cajaFormDer .limpiar {
+    font-size: 0.75rem;
+  }
+  .cajaGral ::placeholder {
+    color: rgba(0, 0, 0, 0.53);
+  }
+  .cajaGral textarea {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+  }
+  .cajaGral textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
 /*RESPONSIVE 320*/
 @media screen and (max-width: 320px) {
-  .fondoContacto {
-    display: flex;
-    height: auto;
-    width: 100%;
-    align-items: none;
-    justify-content: flex-start;
-    background-image: url(../images/contacto/fondogato320.png);
-    margin-top: 5%;
-    margin-bottom: 10%;
-    background-position: top;
-  }
-  .fondoContacto .cajaDuda {
-    display: flex;
-    height: 25px;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 0px;
-  }
-  .fondoContacto .cajaDuda .textoDuda {
-    font-family: "Roboto", sans-serif;
-    color: #545454;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .fondoContacto .cajaComentario {
-    display: flex;
-    height: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .fondoContacto .cajaComentario .textoComentario {
-    font-family: "Roboto", sans-serif;
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  .fondoContacto .cajaAyuda {
-    display: flex;
-    height: auto;
-    width: 73%;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .fondoContacto .cajaAyuda .textoAyuda {
-    font-family: "Roboto", sans-serif;
-    color: #9e9d9d;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-  .fondoContacto .bottomText {
-    display: flex;
-    height: auto;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 120px;
-    text-align: center;
-  }
-  .fondoContacto .bottomText .textoBottom {
-    font-family: "Roboto", sans-serif;
-    color: #9e9d9d;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-
   .cajaGral {
     flex-direction: column;
     border-top-left-radius: 0px;
