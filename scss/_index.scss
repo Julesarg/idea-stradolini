@@ -35,39 +35,36 @@
         }
     }
     .cajaBienvenidos{
-        @include cajasindex(row,center,5%,100%);
+        @include cajasindex(column,center,5%,100%);
+        align-items: center;
         .cajaTexto{
-            @include cajasindex(column,space-between,0%,50%);
-            padding-right: 5%;
-            margin-left: 5%;
+            @include cajasindex(column,center,0%,95%);
             border-top-color: rgba(0, 0, 0, .25);
+            align-items: center;
             border-top-style: solid;
             border-width: 1px;
             .tituloBienvenidos{
                 display: block;
-                padding-left: 2%;
-                font-size: 4rem;
+                font-size: 3rem;
                 font-family: Arial, Helvetica, sans-serif;
                 color: rgba(0, 0, 0, .4);
                 letter-spacing: -4px;
             }
             .parrafoBienvenidos{
+                text-align: center;
                 display: block;
-                padding-left: 2%;
-                padding-right: 4%;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 font-family: Arial, Helvetica, sans-serif;
                 color: rgba(0, 0, 0, .3);
                 line-height:normal;
             }
         }
         .cajaImgBienvenidos{
-            @include cajasindex(row,left,0%,50%);
-            margin-right: 5%;
+            @include cajasindex(row,left,3%,90%);
+            justify-content: center;
             .cajaImgBienvenidos--foto{
                 @include cajasindex(row,center,0%,auto);
                 height: fit-content;
-                padding-right: 5%;
             }        
         }
     }
@@ -174,6 +171,88 @@
         }     
     }
 
+/*RESPONSIVE 1200*/
+@media screen and (max-width:1200px){
+    .cajaMasInformacion{
+        flex-direction: column;
+        .cajaQueHacemos{
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding-right: 0;
+            .textoTitulos{
+                font-size: 2.5rem;
+                letter-spacing: -2px;
+            }
+            .cajaQueHacemos--abajo{
+                flex-direction: column;
+                align-items: center;
+                img{                    
+                    width: 35%;
+                    height: auto;
+                }
+                .cajaQueHacemos--abajo--bis{
+                    @include cajasindex(column,center,0%,100%);
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    padding-top: 2%;
+                    text-align: center;
+                    .linkProductos{
+                        padding-top: 5%;
+                        padding-left: 50%;
+                    }
+                }
+            }
+        }
+        .cajaQueMateriales{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;            
+            padding-left: 0;
+            border-top-style: none;
+            .textoTitulos{
+                font-size: 2.5rem;
+                letter-spacing: -2px;
+                line-height: 40px;
+            }
+            .cajaQueMateriales--abajo{
+                width: 80%;
+                margin-top: 2%;
+                img{
+                    width: 100%;
+                }
+                .cajaQueMateriales--abajo--bis{
+                    p{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .linkMateriales{
+                        text-align: center;
+                        padding:0;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .cajaPagoYenvios{
+        h2{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .cajaImgMdp{
+            height: 80px;
+            padding-left: 5px;
+            padding-right: 5px;
+            .imgMdp{
+                width: auto;
+                height: 50px;
+            }
+        }
+    }   
+}
+
+
 /*RESPONSIVE 768*/
 @media screen and (max-width:768px){
     .carousel{
@@ -232,7 +311,7 @@
                 flex-direction: column;
                 align-items: center;
                 img{                    
-                    width: 50%;
+                    width: 35%;
                     height: auto;
                 }
                 .cajaQueHacemos--abajo--bis{

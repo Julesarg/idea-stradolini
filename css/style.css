@@ -172,7 +172,6 @@ footer .cajaGde {
   width: 100%;
   justify-content: space-between;
   padding-top: 0.5%;
-  padding-bottom: 0.5%;
 }
 footer .cajaGde .cajaIzq {
   display: flex;
@@ -232,8 +231,6 @@ footer .cajaGde .cajaCentro {
   border-right-color: white;
   border-left-color: white;
   border-width: 1px;
-  margin-left: 350px;
-  margin-right: 350px;
   width: 33%;
 }
 footer .cajaGde .cajaCentro .cajaEncontranos {
@@ -302,7 +299,6 @@ footer .cajaGde .cajaDer .tuMensaje {
 footer .cajaGde .cajaDer .cajaGato {
   display: flex;
   position: relative;
-  top: 9.5px;
 }
 footer .cajaGde .cajaDer .cajaGato a .gatoImagen2 {
   position: absolute;
@@ -338,6 +334,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   font-size: 0.75rem;
 }
 
+/*RESPONSIVE 1200*/
+@media screen and (max-width: 1200px) {
+  footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales {
+    flex-direction: column;
+  }
+}
 /*RESPONSIVE 768*/
 @media screen and (max-width: 768px) {
   .headerBox {
@@ -561,38 +563,36 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 
 .cajaBienvenidos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 5%;
   width: 100%;
   overflow: hidden;
+  align-items: center;
 }
 .cajaBienvenidos .cajaTexto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0%;
-  width: 50%;
+  width: 95%;
   overflow: hidden;
-  padding-right: 5%;
-  margin-left: 5%;
   border-top-color: rgba(0, 0, 0, 0.25);
+  align-items: center;
   border-top-style: solid;
   border-width: 1px;
 }
 .cajaBienvenidos .cajaTexto .tituloBienvenidos {
   display: block;
-  padding-left: 2%;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.4);
   letter-spacing: -4px;
 }
 .cajaBienvenidos .cajaTexto .parrafoBienvenidos {
+  text-align: center;
   display: block;
-  padding-left: 2%;
-  padding-right: 4%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.3);
   line-height: normal;
@@ -601,10 +601,10 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-top: 0%;
-  width: 50%;
+  margin-top: 3%;
+  width: 90%;
   overflow: hidden;
-  margin-right: 5%;
+  justify-content: center;
 }
 .cajaBienvenidos .cajaImgBienvenidos .cajaImgBienvenidos--foto {
   display: flex;
@@ -614,7 +614,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   width: auto;
   overflow: hidden;
   height: fit-content;
-  padding-right: 5%;
 }
 
 .cajaMasInformacion {
@@ -770,6 +769,88 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   height: 80px;
 }
 
+/*RESPONSIVE 1200*/
+@media screen and (max-width: 1200px) {
+  .cajaMasInformacion {
+    flex-direction: column;
+  }
+  .cajaMasInformacion .cajaQueHacemos {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+  }
+  .cajaMasInformacion .cajaQueHacemos .textoTitulos {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+  }
+  .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo img {
+    width: 35%;
+    height: auto;
+  }
+  .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo .cajaQueHacemos--abajo--bis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0%;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    text-align: center;
+  }
+  .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo .cajaQueHacemos--abajo--bis .linkProductos {
+    padding-top: 5%;
+    padding-left: 50%;
+  }
+  .cajaMasInformacion .cajaQueMateriales {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    border-top-style: none;
+  }
+  .cajaMasInformacion .cajaQueMateriales .textoTitulos {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    line-height: 40px;
+  }
+  .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--abajo {
+    width: 80%;
+    margin-top: 2%;
+  }
+  .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--abajo img {
+    width: 100%;
+  }
+  .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--abajo .cajaQueMateriales--abajo--bis p {
+    text-align: center;
+    width: 100%;
+  }
+  .cajaMasInformacion .cajaQueMateriales .cajaQueMateriales--abajo .cajaQueMateriales--abajo--bis .linkMateriales {
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .cajaPagoYenvios h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .cajaPagoYenvios .cajaImgMdp {
+    height: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .cajaPagoYenvios .cajaImgMdp .imgMdp {
+    width: auto;
+    height: 50px;
+  }
+}
 /*RESPONSIVE 768*/
 @media screen and (max-width: 768px) {
   .carousel {
@@ -833,7 +914,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     align-items: center;
   }
   .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo img {
-    width: 50%;
+    width: 35%;
     height: auto;
   }
   .cajaMasInformacion .cajaQueHacemos .cajaQueHacemos--abajo .cajaQueHacemos--abajo--bis {

@@ -153,7 +153,6 @@ footer{
         width: 100%;
         justify-content: space-between;
         padding-top: 0.5%;
-        padding-bottom: 0.5%;
         .cajaIzq{
             display: flex;
             flex-direction: row;
@@ -212,8 +211,6 @@ footer{
             border-right-color: white;
             border-left-color: white;
             border-width: 1px;
-            margin-left: 350px;
-            margin-right: 350px;
             width: 33%;
             .cajaEncontranos{
                 text-align: center;
@@ -283,7 +280,6 @@ footer{
             .cajaGato{
                 display: flex;
                 position: relative;
-                top: 9.5px;
                 a{
                     .gatoImagen2{
                         position: absolute;
@@ -323,17 +319,12 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/*RESPONSIVE 1200*/
+@media screen and (max-width:1200px){
+    footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales{
+        flex-direction: column;
+    }
+}
 
 /*RESPONSIVE 768*/
 @media screen and (max-width:768px){
