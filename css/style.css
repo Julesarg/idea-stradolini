@@ -924,7 +924,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /*MAIN 1920px*/
 .bannerFondoProductos {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
@@ -1352,6 +1352,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 }
 /*MIXIN REGLAS*/
 /***************************************************************************************************************************/
+/*MAIN 1920px*/
 .h2h4Clientes {
   margin-top: 8%;
   margin-left: 100px;
@@ -1706,8 +1707,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     margin-top: 2%;
   }
   .contenedorExperiencias .experiencia, .contenedorExperiencias .experienciaB, .contenedorExperiencias .experienciaC {
-    height: 300px;
-    margin-bottom: 5%;
+    height: 275px;
+    margin-bottom: 0%;
   }
   .contenedorExperiencias .experiencia .experiencia--caja2, .contenedorExperiencias .experienciaB .experiencia--caja2, .contenedorExperiencias .experienciaC .experiencia--caja2 {
     width: 60%;
@@ -1855,7 +1856,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     object-fit: cover;
   }
 }
-/*RESPONSIVE 768*/
+/*RESPONSIVE 768****************************************************************************************************/
 @media screen and (max-width: 768px) {
   div.h2h4Clientes {
     margin-left: 0;
@@ -1863,15 +1864,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
 
   section.contenedorExperiencias .nota {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   section.contenedorExperiencias .firma {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   section.contenedorExperiencias .experiencia {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     margin-top: 0%;
     margin-bottom: 10%;
     padding-top: 10%;
@@ -1896,16 +1894,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     width: 90%;
     margin-left: 0;
     text-align: center;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 {
-    width: 90%;
-    flex-direction: row;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
-    width: 25%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1.2);
   }
   section.contenedorExperiencias .experienciaB {
     display: none;
@@ -1940,12 +1928,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     width: 90%;
     flex-direction: row;
   }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
-    width: 25%;
-  }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1.2);
-  }
   section.contenedorExperiencias .experiencia {
     flex-direction: column;
     width: 100%;
@@ -1976,147 +1958,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
   section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
     transform: scale(1.2);
-  }
-
-  .experienciaFotos1 {
-    display: block;
-    z-index: 20;
-    width: 25%;
-    height: fit-content;
-    transition: 0.1s;
-    filter: grayscale(100%) brightness(80%);
-  }
-
-  .experienciaFotos2 {
-    display: block;
-    z-index: 20;
-    width: 25%;
-    height: fit-content;
-    transition: 0.1s;
-    filter: grayscale(100%) brightness(60%);
-  }
-
-  .experienciaFotos3 {
-    display: block;
-    z-index: 20;
-    width: 25%;
-    height: fit-content;
-    transition: 0.1s;
-    filter: grayscale(100%) brightness(40%);
-  }
-
-  .experienciaFotos4 {
-    display: block;
-    z-index: 20;
-    width: 25%;
-    height: fit-content;
-    transition: 0.1s;
-    filter: grayscale(100%) brightness(20%);
-  }
-
-  .experienciaFotos1:hover {
-    transform: scale(1.1);
-    z-index: 50;
-    filter: grayscale(0%) brightness(100%);
-  }
-
-  .experienciaFotos2:hover {
-    transform: scale(1.1);
-    z-index: 50;
-    filter: grayscale(0%) brightness(100%);
-  }
-
-  .experienciaFotos3:hover {
-    transform: scale(1.1);
-    z-index: 50;
-    filter: grayscale(0%) brightness(100%);
-  }
-
-  .experienciaFotos4:hover {
-    transform: scale(1.1);
-    z-index: 50;
-    filter: grayscale(0%) brightness(100%);
   }
 }
-/*RESPONSIVE 320*/
+/*RESPONSIVE 320****************************************************************************************************/
 @media screen and (max-width: 320px) {
-  div.h2h4Clientes {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  section.contenedorExperiencias .experiencia {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    border-bottom-style: double;
-    border-bottom-color: rgba(0, 0, 0, 0.2);
-    border-top-style: double;
-    border-top-color: rgba(0, 0, 0, 0.2);
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia1--caja1 .experiencia1--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 {
-    width: 100%;
-    flex-direction: row;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
-    filter: brightness(100%);
-    width: 25%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4:hover {
-    transform: scale(1);
-  }
   section.contenedorExperiencias .experienciaB {
     display: none;
-  }
-  section.contenedorExperiencias .experienciaC {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 0%;
-    margin-bottom: 10%;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experienciaC .experienciaC--caja1 .experienciaC--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experienciaC .experiencia--caja2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-direction: row;
   }
   section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4 {
     filter: brightness(100%);
@@ -2124,31 +1971,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
   section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos1:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos2:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos3:hover, section.contenedorExperiencias .experienciaC .experiencia--caja2 .experienciaFotos4:hover {
     transform: scale(1);
-  }
-  section.contenedorExperiencias .experiencia {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    border-top-style: none;
-    border-bottom-style: none;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 img {
-    border-radius: 20px;
-    width: 70%;
-  }
-  section.contenedorExperiencias .experiencia .experiencia3--caja1 .experiencia3--cajaTexto {
-    width: 90%;
-    margin-left: 0;
-    text-align: center;
-  }
-  section.contenedorExperiencias .experiencia .experiencia--caja2 {
-    width: 100%;
-    flex-direction: row;
   }
   section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos1, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos2, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos3, section.contenedorExperiencias .experiencia .experiencia--caja2 .experienciaFotos4 {
     filter: brightness(100%);
