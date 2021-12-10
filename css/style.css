@@ -2301,6 +2301,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 }
 /*MIXIN REGLAS*/
 /***************************************************************************************************************************/
+/*MAIN 1920px*/
 .fondoContacto {
   display: flex;
   height: 40vw;
@@ -2507,83 +2508,42 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*RESPONSIVE 768*/
+/*RESPONSIVE 1200**************************************************************************************************/
+@media screen and (max-width: 1200px) {
+  .cajaGral .cajaFormIzq {
+    font-size: 0.8rem;
+  }
+  .cajaGral .cajaFormDer {
+    height: 296px;
+  }
+  .cajaGral .cajaFormDer .recuadroMensaje {
+    height: 250px;
+  }
+  .cajaGral .cajaFormDer .enviar {
+    font-size: 0.8rem;
+  }
+  .cajaGral .cajaFormDer .limpiar {
+    font-size: 0.7rem;
+  }
+}
+/*RESPONSIVE 768***************************************************************************************************/
 @media screen and (max-width: 768px) {
   .cajaGral {
     flex-direction: column;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    margin-bottom: 10%;
-    padding-top: 4%;
   }
   .cajaGral .cajaFormIzq {
     width: 100%;
-    height: auto;
     font-size: 0.75rem;
-    padding: 2%;
   }
   .cajaGral .cajaFormDer {
     width: 100%;
-    height: 296px;
     margin-left: 0%;
     padding: 2%;
-  }
-  .cajaGral .cajaFormDer .enviar {
-    font-size: 0.75rem;
-  }
-  .cajaGral .cajaFormDer .limpiar {
-    font-size: 0.75rem;
-  }
-  .cajaGral ::placeholder {
-    color: rgba(0, 0, 0, 0.53);
-  }
-  .cajaGral textarea {
-    outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.66);
-  }
-  .cajaGral textarea:focus {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: rgba(0, 0, 0, 0.3);
   }
 }
-/*RESPONSIVE 320*/
+/*RESPONSIVE 320****************************************************************************************************/
 @media screen and (max-width: 320px) {
-  .cajaGral {
-    flex-direction: column;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    margin-bottom: 10%;
-    padding-top: 4%;
-  }
-  .cajaGral .cajaFormIzq {
-    width: 100%;
-    height: auto;
-    font-size: 0.75rem;
-    padding: 2%;
-  }
-  .cajaGral .cajaFormDer {
-    width: 100%;
-    height: 296px;
-    margin-left: 0%;
-    padding: 2%;
-  }
-  .cajaGral .cajaFormDer .enviar {
-    font-size: 0.75rem;
-  }
-  .cajaGral .cajaFormDer .limpiar {
-    font-size: 0.75rem;
-  }
-  .cajaGral ::placeholder {
-    color: rgba(0, 0, 0, 0.53);
-  }
-  .cajaGral textarea {
-    outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.66);
-  }
-  .cajaGral textarea:focus {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: rgba(0, 0, 0, 0.3);
-  }
+  /*NADA QUE MODIFICAR*/
 }
 /*fin importados*/
 

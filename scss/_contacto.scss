@@ -15,7 +15,7 @@
     font-weight:$font-weight;
 }
 /***************************************************************************************************************************/
-
+/*MAIN 1920px*/
     .fondoContacto{
         @include cajascontacto(40vw,100%,none,center);
         background-image: url(../images/contacto/fondogato.png);
@@ -197,82 +197,44 @@
         }    
     }
 
-/*RESPONSIVE 768*/
+/*RESPONSIVE 1200**************************************************************************************************/
+@media screen and (max-width:1200px){  
+
+    .cajaGral{
+        .cajaFormIzq{
+            font-size: 0.8rem;
+        }
+        .cajaFormDer{
+            height: 296px;
+            .recuadroMensaje{
+                height: 250px;
+            }
+            .enviar{
+                font-size: 0.8rem;
+            }
+            .limpiar{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+/*RESPONSIVE 768***************************************************************************************************/
 @media screen and (max-width:768px){    
     .cajaGral{
         flex-direction: column;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        margin-bottom: 10%;
-        padding-top: 4%;
         .cajaFormIzq{
             width: 100%;
-            height: auto;
             font-size: 0.75rem;
-            padding: 2%;
         }
         .cajaFormDer{
             width: 100%;
-            height: 296px;
             margin-left: 0%;
             padding: 2%;
-            .enviar{
-                font-size: 0.75rem;
-            }
-            .limpiar{
-                font-size: 0.75rem;
-            }
-        }
-        ::placeholder{
-            color: rgba(0, 0, 0, 0.53);
-        }
-        textarea{
-            outline: none;
-            border: 1px solid rgba(255, 255, 255, 0.66);
-        }  
-        textarea:focus{
-            border: 1px solid rgba(0, 0, 0, .3);
-            color: rgba(0, 0, 0, .3);
         }    
     }
 }
 
-/*RESPONSIVE 320*/
-@media screen and (max-width:320px){    
-    .cajaGral{
-        flex-direction: column;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        margin-bottom: 10%;
-        padding-top: 4%;
-        .cajaFormIzq{
-            width: 100%;
-            height: auto;
-            font-size: 0.75rem;
-            padding: 2%;
-        }
-        .cajaFormDer{
-            width: 100%;
-            height: 296px;
-            margin-left: 0%;
-            padding: 2%;
-            .enviar{
-                font-size: 0.75rem;
-            }
-            .limpiar{
-                font-size: 0.75rem;
-            }
-        }
-        ::placeholder{
-            color: rgba(0, 0, 0, 0.53);
-        }
-        textarea{
-            outline: none;
-            border: 1px solid rgba(255, 255, 255, 0.66);
-        }  
-        textarea:focus{
-            border: 1px solid rgba(0, 0, 0, .3);
-            color: rgba(0, 0, 0, .3);
-        }    
-    }
+/*RESPONSIVE 320****************************************************************************************************/
+@media screen and (max-width:320px){
+/*NADA QUE MODIFICAR*/  
 }
