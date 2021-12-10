@@ -6,6 +6,8 @@
     color: white;
 }
 /*fin correciones*/
+/***************************************************************************************************************************/
+/*MAIN 1920px*/
 
     .bannerFondoProductos{
         width: 100%;
@@ -308,7 +310,7 @@
         display: block;
     }
 
-/*RESPONSIVE 1200*/
+/*RESPONSIVE 1200***************************************************************************************************/
 @media screen and (max-width:1200px){
     div.separador{
         display: block;
@@ -326,7 +328,6 @@
             font-size: 1.4rem;
         }
         .accordion{
-            flex-direction:column;
             margin-top: 1%;
             .accordion-item{
                 display: flex;
@@ -353,6 +354,13 @@
             .cajitaImagen{
                 width: 200px;
                 height: 200px;
+                a{
+                    .imagenProductoListado{
+                        width: 200px;
+                        height: 200px;
+                        display: block;
+                    }
+                }
                 .textoprueba1{
                     top: 101%;  
                 }              
@@ -367,31 +375,11 @@
             padding-left: 0%;
             padding-right: 0%;
         }
-    }
-    .imagenProductoListado{
-        width: 200px;
-        height: 200px;
-        display: block;
     }   
 }
-
-/*RESPONSIVE 768*/
+/*RESPONSIVE 768***************************************************************************************************/
 @media screen and (max-width:768px){
-    div.bannerFondoProductos{
-        height: auto;
-        .bannerFoto1{
-            width: 25%;
-        }
-        .bannerFoto2{
-            width: 25%;
-        }
-        .bannerFoto3{
-            width: 25%;
-        }
-        .bannerFoto4{
-            width: 25%;
-        }
-    }
+
     div.bannerCajaTexto{
         bottom: 50px;
         height: 50px;
@@ -405,43 +393,18 @@
     section.productosContenedor{
     flex-direction: column;
         .cajaMenuIzq{
-            width: 100%;
-            border-radius: 0px;
-            margin-left: 0%;
-            margin-top: -20px;
-            padding-bottom: 0%;
-            padding-top: 0%;
-            box-shadow: none;
             .textoProductos{
                 font-size: 1rem;    
             }
             .accordion{
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-                padding-bottom: 5px;
                 .accordion-item{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
                     .accordion-header{
                         .accordion-button{
                             font-size: 1rem;
-                        }
-                        .accordion-button::after{
-                            display: none;
-                        }
-                        .accordion-button:hover{
-                            color: rgba(0, 0, 0, .25);
-                        }                        
+                        }                    
                     }
-                    .accordion-collapse{
-                        width: 100%;
+                    .accordion-collapse{                        
                         .hipervinculosTextoProductos{
-                            padding-left: 0px;
-                            padding-right: 0px;
-                            text-align: center;
                             font-size: 1rem;
                         }
                     }
@@ -449,30 +412,20 @@
             }
         }
         .cajaMenuDer{
-            margin-right: 0px;
-            width: 100%;
-            margin-bottom: 15%;
-            padding-right: 10px;
-            padding-left: 10px;
             .cajaTextoDondeEstoy{
-                display: block;
-                margin-top: 25px;
-                margin-left: 0;
-                margin-right: 0;
-                text-align: center;
                 .textoDondeEstoy{
                     font-size: 1.4rem;
                     padding-left: 0px;
                 }
             }
             .cajaProductos{
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto;
-                grid-column-gap: 0px;
+                grid-template-columns: repeat(auto-fill, 200px);
+                grid-template-rows: repeat(auto-fill, 150px);                
+                grid-column-gap: 20px;
                 grid-row-gap: 50px;
-                padding-right: 0%;
                 justify-items: center;
                 padding-top: 25px;
+                margin-bottom: 10%;
                 .cajitaImagen{
                     height: 150px;
                     width: 150px;
@@ -494,124 +447,7 @@
         }
     }
 }
-
-
-/*RESPONSIVE 320*/
+/*RESPONSIVE 320*****************************************************************************************************/
 @media screen and (max-width:320px){
-    div.bannerFondoProductos{
-        height: auto;
-        .bannerFoto1{
-            width: 25%;
-        }
-        .bannerFoto2{
-            width: 25%;
-        }
-        .bannerFoto3{
-            width: 25%;
-        }
-        .bannerFoto4{
-            width: 25%;
-        }
-    }
-    div.bannerCajaTexto{
-        bottom: 50px;
-        height: 50px;
-        .bannerFooterTexto{
-            font-size: 1.5rem;
-        }
-    }
-    div.separador{
-        display: none;
-    }      
-    section.productosContenedor{
-    flex-direction: column;
-        .cajaMenuIzq{
-            width: 100%;
-            border-radius: 0px;
-            margin-left: 0%;
-            margin-top: -20px;
-            padding-bottom: 0%;
-            padding-top: 0%;
-            box-shadow: none;
-            .textoProductos{
-                font-size: 1rem;    
-            }
-            .accordion{
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-                padding-bottom: 5px;
-                .accordion-item{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .accordion-header{
-                        .accordion-button{
-                            font-size: 1rem;
-                        }
-                        .accordion-button::after{
-                            display: none;
-                        }
-                        .accordion-button:hover{
-                            color: rgba(0, 0, 0, .25);
-                        }                        
-                    }
-                    .accordion-collapse{
-                        width: 100%;
-                        .hipervinculosTextoProductos{
-                            padding-left: 0px;
-                            padding-right: 0px;
-                            text-align: center;
-                            font-size: 1rem;
-                        }
-                    }
-                }            
-            }
-        }
-        .cajaMenuDer{
-            margin-right: 0px;
-            width: 100%;
-            margin-bottom: 15%;
-            padding-right: 10px;
-            padding-left: 10px;
-            .cajaTextoDondeEstoy{
-                display: block;
-                margin-top: 25px;
-                margin-left: 0;
-                margin-right: 0;
-                text-align: center;
-                .textoDondeEstoy{
-                    font-size: 1.4rem;
-                    padding-left: 0px;
-                }
-            }
-            .cajaProductos{
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                grid-column-gap: 0px;
-                grid-row-gap: 50px;
-                padding-right: 0%;
-                justify-items: center;
-                padding-top: 25px;
-                .cajitaImagen{
-                    height: 150px;
-                    width: 150px;
-                    a{
-                        .imagenProductoListado{
-                            width: 150px;
-                            height: 150px;
-                        }
-                    }
-                    .textoprueba1{
-                        top: 100%;
-                        font-size: 1.1rem; 
-                    }
-                }
-                .cajitaImagen:hover .textoprueba1{
-                    height: 20%;
-                }
-            }            
-        }
-    }
+    /*NADA QUE MODIFICAR*/
 }

@@ -920,6 +920,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 }
 
 /*fin correciones*/
+/***************************************************************************************************************************/
+/*MAIN 1920px*/
 .bannerFondoProductos {
   width: 100%;
   height: auto;
@@ -1224,7 +1226,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: block;
 }
 
-/*RESPONSIVE 1200*/
+/*RESPONSIVE 1200***************************************************************************************************/
 @media screen and (max-width: 1200px) {
   div.separador {
     display: block;
@@ -1245,7 +1247,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     font-size: 1.4rem;
   }
   section.productosContenedor .cajaMenuIzq .accordion {
-    flex-direction: column;
     margin-top: 1%;
   }
   section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
@@ -1272,6 +1273,11 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     width: 200px;
     height: 200px;
   }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
   section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
     top: 101%;
   }
@@ -1284,31 +1290,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     padding-left: 0%;
     padding-right: 0%;
   }
-
-  .imagenProductoListado {
-    width: 200px;
-    height: 200px;
-    display: block;
-  }
 }
-/*RESPONSIVE 768*/
+/*RESPONSIVE 768***************************************************************************************************/
 @media screen and (max-width: 768px) {
-  div.bannerFondoProductos {
-    height: auto;
-  }
-  div.bannerFondoProductos .bannerFoto1 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto2 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto3 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto4 {
-    width: 25%;
-  }
-
   div.bannerCajaTexto {
     bottom: 50px;
     height: 50px;
@@ -1324,74 +1308,27 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   section.productosContenedor {
     flex-direction: column;
   }
-  section.productosContenedor .cajaMenuIzq {
-    width: 100%;
-    border-radius: 0px;
-    margin-left: 0%;
-    margin-top: -20px;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    box-shadow: none;
-  }
   section.productosContenedor .cajaMenuIzq .textoProductos {
     font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    padding-bottom: 5px;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
     font-size: 1rem;
   }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button::after {
-    display: none;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button:hover {
-    color: rgba(0, 0, 0, 0.25);
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse {
-    width: 100%;
-  }
   section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse .hipervinculosTextoProductos {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
     font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuDer {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 15%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
-    display: block;
-    margin-top: 25px;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
   }
   section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
     font-size: 1.4rem;
     padding-left: 0px;
   }
   section.productosContenedor .cajaMenuDer .cajaProductos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-column-gap: 20px;
     grid-row-gap: 50px;
-    padding-right: 0%;
     justify-items: center;
     padding-top: 25px;
+    margin-bottom: 10%;
   }
   section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
     height: 150px;
@@ -1409,123 +1346,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     height: 20%;
   }
 }
-/*RESPONSIVE 320*/
+/*RESPONSIVE 320*****************************************************************************************************/
 @media screen and (max-width: 320px) {
-  div.bannerFondoProductos {
-    height: auto;
-  }
-  div.bannerFondoProductos .bannerFoto1 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto2 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto3 {
-    width: 25%;
-  }
-  div.bannerFondoProductos .bannerFoto4 {
-    width: 25%;
-  }
-
-  div.bannerCajaTexto {
-    bottom: 50px;
-    height: 50px;
-  }
-  div.bannerCajaTexto .bannerFooterTexto {
-    font-size: 1.5rem;
-  }
-
-  div.separador {
-    display: none;
-  }
-
-  section.productosContenedor {
-    flex-direction: column;
-  }
-  section.productosContenedor .cajaMenuIzq {
-    width: 100%;
-    border-radius: 0px;
-    margin-left: 0%;
-    margin-top: -20px;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    box-shadow: none;
-  }
-  section.productosContenedor .cajaMenuIzq .textoProductos {
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    padding-bottom: 5px;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button::after {
-    display: none;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button:hover {
-    color: rgba(0, 0, 0, 0.25);
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse {
-    width: 100%;
-  }
-  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-collapse .hipervinculosTextoProductos {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-    font-size: 1rem;
-  }
-  section.productosContenedor .cajaMenuDer {
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom: 15%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
-    display: block;
-    margin-top: 25px;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
-  section.productosContenedor .cajaMenuDer .cajaTextoDondeEstoy .textoDondeEstoy {
-    font-size: 1.4rem;
-    padding-left: 0px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 50px;
-    padding-right: 0%;
-    justify-items: center;
-    padding-top: 25px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
-    height: 150px;
-    width: 150px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen a .imagenProductoListado {
-    width: 150px;
-    height: 150px;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
-    top: 100%;
-    font-size: 1.1rem;
-  }
-  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen:hover .textoprueba1 {
-    height: 20%;
-  }
+  /*NADA QUE MODIFICAR*/
 }
 /*MIXIN REGLAS*/
 /***************************************************************************************************************************/
