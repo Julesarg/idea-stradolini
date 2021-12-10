@@ -336,6 +336,13 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 
 /*RESPONSIVE 1200*/
 @media screen and (max-width: 1200px) {
+  nav ul li img {
+    width: 120px;
+    height: 120px;
+    bottom: 33px;
+    z-index: 200;
+  }
+
   footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales {
     flex-direction: column;
   }
@@ -1112,7 +1119,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /*fin correciones*/
 .bannerFondoProductos {
   width: 100%;
-  height: 800px;
+  height: auto;
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
@@ -1121,6 +1128,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-name: foto1;
   animation-iteration-count: 1;
   animation-duration: 2s;
+  width: 25%;
 }
 @keyframes foto1 {
   from {
@@ -1136,6 +1144,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-name: foto2;
   animation-iteration-count: 1;
   animation-duration: 2s;
+  width: 25%;
 }
 @keyframes foto2 {
   from {
@@ -1151,6 +1160,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-name: foto3;
   animation-iteration-count: 1;
   animation-duration: 2s;
+  width: 25%;
 }
 @keyframes foto3 {
   from {
@@ -1166,6 +1176,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   animation-name: foto4;
   animation-iteration-count: 1;
   animation-duration: 2s;
+  width: 25%;
 }
 @keyframes foto4 {
   from {
@@ -1239,8 +1250,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   flex-direction: row;
   width: 100%;
   height: auto;
+  margin-bottom: 5%;
   justify-content: space-between;
-  align-items: flex-start;
 }
 .productosContenedor .cajaMenuIzq {
   display: flex;
@@ -1249,8 +1260,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   padding-top: 1%;
   padding-bottom: 2%;
   margin-top: 2%;
-  width: 300px;
-  height: auto;
+  width: 20%;
+  height: 50%;
   border-radius: 30px;
   background-color: rgba(191, 85, 124, 0.3);
   box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -1273,7 +1284,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 .productosContenedor .cajaMenuIzq .accordion .accordion-item {
@@ -1309,7 +1320,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .productosContenedor .cajaMenuDer {
   display: flex;
   flex-direction: column;
-  margin-right: 10%;
+  margin-right: 5%;
+  width: 70%;
 }
 .productosContenedor .cajaMenuDer .cajaTextoDondeEstoy {
   display: flex;
@@ -1334,16 +1346,16 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 }
 .productosContenedor .cajaMenuDer .cajaProductos {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-column-gap: 75px;
-  grid-row-gap: 75px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-rows: repeat(auto-fill, 240px);
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
   height: auto;
   border-top-style: solid;
   border-top-color: rgba(0, 0, 0, 0.3);
   border-top-width: 3px;
   padding-top: 2%;
-  padding-right: 18%;
 }
 .productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
   position: relative;
@@ -1409,6 +1421,73 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: block;
 }
 
+/*RESPONSIVE 1200*/
+@media screen and (max-width: 1200px) {
+  div.separador {
+    display: block;
+  }
+
+  section.productosContenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.productosContenedor .cajaMenuIzq {
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 100%;
+    border-radius: 0px;
+  }
+  section.productosContenedor .cajaMenuIzq .textoProductos {
+    font-size: 1.4rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion {
+    flex-direction: column;
+    margin-top: 1%;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1.2rem;
+  }
+  section.productosContenedor .cajaMenuIzq .accordion .accordion-button::after {
+    display: none;
+  }
+  section.productosContenedor .cajaMenuDer {
+    margin-right: 0%;
+    width: 90%;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos {
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen {
+    width: 200px;
+    height: 200px;
+  }
+  section.productosContenedor .cajaMenuDer .cajaProductos .cajitaImagen .textoprueba1 {
+    top: 101%;
+  }
+
+  .accordion-collapse {
+    width: 100%;
+  }
+  .accordion-collapse .hipervinculosTextoProductos {
+    font-size: 1.25rem;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .imagenProductoListado {
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
+}
 /*RESPONSIVE 768*/
 @media screen and (max-width: 768px) {
   div.bannerFondoProductos {
@@ -1648,10 +1727,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /*MIXIN REGLAS*/
 /***************************************************************************************************************************/
 .h2h4Clientes {
-  margin-top: 5%;
+  margin-top: 8%;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 10px;
 }
 .h2h4Clientes h2 {
   font-size: 1.5rem;
@@ -1670,25 +1748,28 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .contenedorExperiencias {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 2%;
   align-items: center;
+  width: 100%;
 }
 .contenedorExperiencias .experiencia, .contenedorExperiencias .experienciaB, .contenedorExperiencias .experienciaC {
   display: flex;
   flex-direction: row;
   width: 80%;
-  height: 300px;
+  height: 350px;
   align-items: center;
-  margin-bottom: 4%;
+  margin-bottom: 6%;
 }
 .contenedorExperiencias .experiencia .experiencia--caja2, .contenedorExperiencias .experienciaB .experiencia--caja2, .contenedorExperiencias .experienciaC .experiencia--caja2 {
   display: flex;
+  align-items: center;
   width: 60%;
-  height: 100%;
+  height: 80%;
 }
 .contenedorExperiencias .experiencia .experiencia--caja2--2, .contenedorExperiencias .experienciaB .experiencia--caja2--2, .contenedorExperiencias .experienciaC .experiencia--caja2--2 {
   display: flex;
   width: 60%;
+  align-items: center;
   height: 100%;
   justify-content: flex-end;
 }
@@ -1698,14 +1779,14 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 
 .nota {
   font-family: "Cabin", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1vw;
   color: rgba(0, 0, 0, 0.4);
   font-style: italic;
 }
 
 .firma {
   font-family: "Cabin", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3vw;
   text-align: right;
   opacity: 0.8;
 }
@@ -1713,7 +1794,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .experiencia1--caja1 {
   display: flex;
   width: 40%;
-  height: 80%;
+  height: 65%;
   border-top-style: solid;
   border-bottom-style: solid;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -1730,14 +1811,15 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin-left: 30px;
+  width: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .experienciaB--caja1 {
   display: flex;
   width: 40%;
-  height: 80%;
+  height: 65%;
   border-top-style: solid;
   border-bottom-style: solid;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -1751,8 +1833,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin-left: 30px;
+  width: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
   padding-right: 20px;
 }
 .experienciaB--caja1 img {
@@ -1763,7 +1846,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .experienciaC--caja1 {
   display: flex;
   width: 40%;
-  height: 80%;
+  height: 65%;
   border-top-style: solid;
   border-bottom-style: solid;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -1780,15 +1863,16 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin-left: 30px;
+  width: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-left: 30px;
 }
 
 .experiencia3--caja1 {
   display: flex;
   width: 40%;
-  height: 80%;
+  height: 65%;
   border-top-style: solid;
   border-bottom-style: solid;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -1805,35 +1889,44 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin-left: 30px;
+  width: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-left: 30px;
 }
 
 .experienciaFotos1 {
-  display: flex;
+  display: block;
   z-index: 20;
+  width: 25%;
+  height: fit-content;
   transition: 0.1s;
   filter: grayscale(100%) brightness(80%);
 }
 
 .experienciaFotos2 {
-  display: flex;
+  display: block;
   z-index: 20;
+  width: 25%;
+  height: fit-content;
   transition: 0.1s;
   filter: grayscale(100%) brightness(60%);
 }
 
 .experienciaFotos3 {
-  display: flex;
+  display: block;
   z-index: 20;
+  width: 25%;
+  height: fit-content;
   transition: 0.1s;
   filter: grayscale(100%) brightness(40%);
 }
 
 .experienciaFotos4 {
-  display: flex;
+  display: block;
   z-index: 20;
+  width: 25%;
+  height: fit-content;
   transition: 0.1s;
   filter: grayscale(100%) brightness(20%);
 }
@@ -1977,6 +2070,164 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   object-fit: cover;
 }
 
+/*RESPONSIVE 1200*/
+@media screen and (max-width: 1200px) {
+  .h2h4Clientes {
+    margin-top: 6%;
+  }
+
+  .contenedorExperiencias {
+    margin-top: 2%;
+  }
+  .contenedorExperiencias .experiencia, .contenedorExperiencias .experienciaB, .contenedorExperiencias .experienciaC {
+    height: 300px;
+    margin-bottom: 5%;
+  }
+  .contenedorExperiencias .experiencia .experiencia--caja2, .contenedorExperiencias .experienciaB .experiencia--caja2, .contenedorExperiencias .experienciaC .experiencia--caja2 {
+    width: 60%;
+    height: 80%;
+  }
+
+  .nota {
+    font-size: 0.7rem;
+  }
+
+  .firma {
+    font-size: 0.8rem;
+  }
+
+  .experiencia1--caja1 {
+    width: 50%;
+    height: 40%;
+  }
+  .experienciaB--caja1 {
+    width: 50%;
+    height: 40%;
+  }
+
+  .experiencia3--caja1 {
+    width: 50%;
+    height: 40%;
+  }
+  .experiencia3--caja1 .experiencia3--cajaTexto {
+    margin-left: 0%;
+  }
+
+  /*AUN NO TERMINADO*/
+  .grid {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+  }
+  .grid .gridizq {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 650px;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+  }
+  .grid .gridizq .imagengrid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .grid .gridizq .imagengrid2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .grid .gridizq .imagengrid3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid .gridizq .imagengrid4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .grid .gridizq .imagengrid5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .grid .gridizq .imagengrid6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .grid .gridizq .imagengrid7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .grid .gridder {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 650px;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+  }
+  .grid .gridder .imagengrid10 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .grid .gridder .imagengrid20 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .grid .gridder .imagengrid30 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid .gridder .imagengrid40 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .grid .gridder .imagengrid50 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .grid .gridder .imagengrid60 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .imagenesgrid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 /*RESPONSIVE 768*/
 @media screen and (max-width: 768px) {
   div.h2h4Clientes {
@@ -1984,6 +2235,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     margin-right: 0;
   }
 
+  section.contenedorExperiencias .nota {
+    font-size: 1.2rem;
+  }
+  section.contenedorExperiencias .firma {
+    font-size: 1.4rem;
+  }
   section.contenedorExperiencias .experiencia {
     flex-direction: column;
     width: 100%;
@@ -2095,29 +2352,37 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   }
 
   .experienciaFotos1 {
-    display: flex;
+    display: block;
     z-index: 20;
+    width: 25%;
+    height: fit-content;
     transition: 0.1s;
     filter: grayscale(100%) brightness(80%);
   }
 
   .experienciaFotos2 {
-    display: flex;
+    display: block;
     z-index: 20;
+    width: 25%;
+    height: fit-content;
     transition: 0.1s;
     filter: grayscale(100%) brightness(60%);
   }
 
   .experienciaFotos3 {
-    display: flex;
+    display: block;
     z-index: 20;
+    width: 25%;
+    height: fit-content;
     transition: 0.1s;
     filter: grayscale(100%) brightness(40%);
   }
 
   .experienciaFotos4 {
-    display: flex;
+    display: block;
     z-index: 20;
+    width: 25%;
+    height: fit-content;
     transition: 0.1s;
     filter: grayscale(100%) brightness(20%);
   }

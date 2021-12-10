@@ -9,7 +9,7 @@
 
     .bannerFondoProductos{
         width: 100%;
-        height: 800px;
+        height: auto;
         margin-top: 1%;
         display: flex;
         justify-content: space-between;
@@ -17,6 +17,7 @@
             animation-name: foto1;
             animation-iteration-count: 1;
             animation-duration: 2s;
+            width: 25%;
         }
         @keyframes foto1{
             from{
@@ -32,6 +33,7 @@
             animation-name: foto2;
             animation-iteration-count: 1;
             animation-duration: 2s;
+            width: 25%;
         }
         @keyframes foto2{
             from{
@@ -47,6 +49,7 @@
             animation-name: foto3;
             animation-iteration-count: 1;
             animation-duration: 2s;
+            width: 25%;
         }
         @keyframes foto3{
             from{
@@ -62,6 +65,7 @@
         animation-name: foto4;
         animation-iteration-count: 1;
         animation-duration: 2s;
+        width: 25%;
         }
         @keyframes foto4{
             from{
@@ -133,8 +137,8 @@
         flex-direction: row;
         width: 100%;
         height: auto;
+        margin-bottom: 5%;
         justify-content: space-between;
-        align-items:flex-start;
         .cajaMenuIzq{
             display: flex;
             flex-direction: column;
@@ -142,8 +146,8 @@
             padding-top: 1%;
             padding-bottom: 2%;
             margin-top: 2%;
-            width: 300px;
-            height: auto;
+            width: 20%;
+            height: 50%;
             border-radius: 30px;
             background-color: rgba(191, 85, 124, .3);
             box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -165,7 +169,7 @@
                 display: flex;
                 flex-direction: column;
                 margin-top: 5%;
-                width: 300px;
+                width: 100%;
                 height: auto;            
                 .accordion-item{
                     background-color:transparent;
@@ -204,7 +208,8 @@
         .cajaMenuDer{
             display: flex;
             flex-direction: column;
-            margin-right: 10%;
+            margin-right: 5%;
+            width: 70%;
             .cajaTextoDondeEstoy{
                 display: flex;
                 flex-direction: row;
@@ -228,16 +233,16 @@
             }
             .cajaProductos{
                 display: grid;
-                grid-template-columns: 25% 25% 25% 25%;
-                grid-template-rows: 25% 25% 25% 25%;
-                grid-column-gap: 75px;
-                grid-row-gap: 75px;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fill, 250px);
+                grid-template-rows: repeat(auto-fill, 240px);
+                grid-column-gap: 100px;
+                grid-row-gap: 100px;
                 height:auto;
                 border-top-style: solid;
                 border-top-color: rgba(0, 0, 0, .3);
                 border-top-width: 3px;
                 padding-top: 2%;
-                padding-right: 18%;
                 .cajitaImagen{
                     position: relative;
                     width: 250px;
@@ -302,6 +307,73 @@
         height: 250px;
         display: block;
     }
+
+/*RESPONSIVE 1200*/
+@media screen and (max-width:1200px){
+    div.separador{
+        display: block;
+    }      
+    section.productosContenedor{
+    flex-direction: column;
+    align-items: center;
+    .cajaMenuIzq{
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 3%;
+        width: 100%;
+        border-radius: 0px;
+        .textoProductos{
+            font-size: 1.4rem;
+        }
+        .accordion{
+            flex-direction:column;
+            margin-top: 1%;
+            .accordion-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .accordion-header{
+                    .accordion-button{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .accordion-button::after{
+                display: none;
+            }
+        }        
+    }    
+    .cajaMenuDer{
+        margin-right: 0%;
+        width: 90%;
+        .cajaProductos{
+            grid-template-columns: repeat(auto-fill, 200px);
+            grid-template-rows: repeat(auto-fill, 200px);
+            .cajitaImagen{
+                width: 200px;
+                height: 200px;
+                .textoprueba1{
+                    top: 101%;  
+                }              
+            }
+        }
+    }
+}
+    .accordion-collapse{
+        width: 100%;
+        .hipervinculosTextoProductos{
+            font-size: 1.25rem;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    .imagenProductoListado{
+        width: 200px;
+        height: 200px;
+        display: block;
+    }   
+}
 
 /*RESPONSIVE 768*/
 @media screen and (max-width:768px){

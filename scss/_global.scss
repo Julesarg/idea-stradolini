@@ -321,6 +321,18 @@ footer{
 
 /*RESPONSIVE 1200*/
 @media screen and (max-width:1200px){
+    nav{
+        ul{
+            li{
+                img{                    
+                width: 120px;
+                height: 120px;
+                bottom: 33px;
+                z-index: 200;
+                }
+            }
+        }
+    }    
     footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales{
         flex-direction: column;
     }
