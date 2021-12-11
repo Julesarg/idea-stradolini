@@ -1073,7 +1073,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   height: 100%;
   margin-top: 1%;
   display: flex;
-  justify-content: space-between;
 }
 .bannerFondoProductos .bannerFoto1 {
   animation-name: foto1;
