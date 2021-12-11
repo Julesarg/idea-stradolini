@@ -1530,7 +1530,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   width: 80%;
   height: 350px;
   align-items: center;
-  margin-bottom: 6%;
+  margin-bottom: 4%;
 }
 .contenedorExperiencias .experiencia .experiencia--caja2, .contenedorExperiencias .experienciaB .experiencia--caja2, .contenedorExperiencias .experienciaC .experiencia--caja2 {
   display: flex;
@@ -1731,7 +1731,8 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .grid {
   display: flex;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
 .grid .gridizq {
   display: grid;
@@ -1790,7 +1791,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 .grid .gridder {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 25% 25% 25% 25%;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   width: 100%;
@@ -1834,6 +1835,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+.grid .gridder .imagengrid70 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .imagenesgrid {
@@ -1993,6 +2000,12 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+  .grid .gridder .imagengrid70 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
   .imagenesgrid {
