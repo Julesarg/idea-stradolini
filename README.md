@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://github.com/Julesarg/idea-stradolini/blob/main/images/readmeimg.jpg"/>
 </p>
+
 ## Informacion
 * [Sobre el proyecto](#Sobre-el-Proyecto)
 * [Herramientas y complementos](#Herramientas-y-complementos)
