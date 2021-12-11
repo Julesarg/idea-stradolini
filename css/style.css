@@ -699,20 +699,24 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 /*MAIN 1920px*/
 .carousel-indicators {
   z-index: 100;
-  color: red;
+}
+
+.carousel-control-next {
+  z-index: 500;
+}
+
+.carousel-control-prev {
+  z-index: 500;
 }
 
 .carousel-inner {
   display: flex;
   margin-top: 1%;
   position: relative;
-  z-index: 3 !important;
+  z-index: 3;
 }
 .carousel-inner .d-block {
   width: 100%;
-}
-.carousel-inner .carousel-control-next {
-  z-index: 500;
 }
 
 .cajaBienvenidos {
@@ -1056,7 +1060,13 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 }
 /*RESPONSIVE 320*****************************************************************************************************/
 @media screen and (max-width: 320px) {
-  /*NADA QUE AGREGAR*/
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
 }
 /*MIXIN REGLAS*/
 /***************************************************************************************************************************/

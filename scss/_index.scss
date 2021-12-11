@@ -21,19 +21,21 @@
 
     .carousel-indicators{
         z-index: 100;
-        color: red;
+    }
+    .carousel-control-next{
+        z-index: 500;
+    }
+    .carousel-control-prev{
+        z-index: 500;
     }
     .carousel-inner{
         display: flex;
         margin-top: 1%;
         position: relative;
-        z-index: 3 !important;
+        z-index: 3;
         .d-block{
             width: 100%;
-        }
-        .carousel-control-next{
-            z-index: 500;
-        }
+        }        
     }
     .cajaBienvenidos{
         @include cajasindex(column,center,5%,100%);
@@ -316,5 +318,10 @@
 
 /*RESPONSIVE 320*****************************************************************************************************/
 @media screen and (max-width:320px){
-/*NADA QUE AGREGAR*/
+    .carousel-control-next{
+        display: none;
+    }
+    .carousel-control-prev{
+        display: none;
+    }
 }
