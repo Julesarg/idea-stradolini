@@ -41,7 +41,7 @@
                     animation-duration: 3s;
                 }
                 .textoComentario{
-                    @include textocontactoup(rgba(0, 0, 0, .3),3vw,500);
+                    @include textocontactoup($opacidadnegro3,3vw,500);
                     height:3vw;                    
                     padding-left: 10%;
                     animation-name: efecto1contacto;
@@ -110,11 +110,11 @@
             display: flex;
             flex-direction: column;
             background-color:rgba(228, 228, 228, 0.25);
-            color: rgba(0, 0, 0, 0.53);
+            color: $opacidadnegro4;;
             border-radius: 10px;
             border-style:solid;
             border-width: 1.5px;
-            border-color: rgba(0, 0, 0, .25);
+            border-color: $opacidadnegro2;
             font-size: 1.1rem;
             font-weight: 500;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -151,8 +151,8 @@
                 border: 1px solid rgba(255, 255, 255, 0.66);
             }  
             input[type=text]:focus {
-                border: 1px solid rgba(0, 0, 0, .4);
-                color: rgba(0, 0, 0, .3);
+                border: 1px solid $opacidadnegro5;
+                color: rgba$opacidadnegro3;
             }
         }
         .cajaFormDer{
@@ -171,29 +171,29 @@
             }
             .enviar{
                 background-color:rgba(245, 144, 153, 0.63);
-                color: rgba(0, 0, 0, 0.53);
+                color: $opacidadnegro6;
                 font-size: 1rem;
                 font-weight: 700;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             .limpiar{
                 background-color:rgba(245, 144, 153, 0.63);
-                color: rgba(0, 0, 0, 0.53);
+                color:$opacidadnegro6;
                 font-size: 0.9rem;
                 font-weight: 500;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         }
         ::placeholder{
-            color: rgba(0, 0, 0, 0.53);
+            color: $opacidadnegro5;
         }
         textarea{
             outline: none;
             border: 1px solid rgba(255, 255, 255, 0.66);
         }  
         textarea:focus{
-            border: 1px solid rgba(0, 0, 0, .3);
-            color: rgba(0, 0, 0, .3);
+            border: 1px solid $opacidadnegro7;
+            color: $opacidadnegro3;
         }    
     }
 

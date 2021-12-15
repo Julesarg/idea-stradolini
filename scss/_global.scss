@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;    
 }
-body { 
+body{ 
     display: flex; 
     flex-flow: column;
     font-size:16px;
-   }
-main {
+}
+main{
     flex: 1;
-   }
+}
 
 /*ERROR 404*/
 
@@ -25,13 +25,13 @@ main {
             font-family:Arial, Helvetica, sans-serif;
             margin-top: 50px;
             margin-bottom: 0px;
-            color:rgba(0, 0, 0, 0.7);
+            color:$opacidadnegro7;
             font-weight: bold;
         }
         h4{
             font-size: 2vw;
             margin-bottom: 0px;
-            color:rgba(0, 0, 0, 0.6);
+            color:$opacidadnegro6;
         }
         .fondo4042{        
             display: flex;
@@ -48,7 +48,7 @@ main {
                     font-size: 1.5vw;
                     margin-right: 80px;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    color:rgba(0, 0, 0, 0.5);
+                    color:$opacidadnegro5;
                     margin-bottom:0px;
                     font-style: italic;
                 }
