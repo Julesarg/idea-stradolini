@@ -2011,7 +2011,7 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
   transition: box-shadow 100ms cubic-bezier(0.2, 0, 0.7, 1), transform 100ms cubic-bezier(0.2, 0, 0.7, 1);
 }
 .cajaMatPrima nav .nav-tabs .nav-link .cajaTransicion:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 0 1px 10px rgba(180, 1, 141, 0.3);
 }
 .cajaMatPrima nav .nav-tabs .nav-link.active {
@@ -2193,8 +2193,15 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 
 /*RESPONSIVE 1200****************************************************************************************************/
 @media screen and (max-width: 1200px) {
-  .CajaMatPrima {
+  .cajaMatPrima {
     margin-top: 5%;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link {
+    margin: 8px;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link .cajaTransicion {
+    width: 80px;
+    height: 80px;
   }
 }
 /*RESPONSIVE 768*****************************************************************************************************/
@@ -2204,6 +2211,9 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
     padding-bottom: 3.5%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .cajaMatPrima nav .nav-tabs .nav-link {
+    margin: 10px;
   }
 
   section.contenedorStock {

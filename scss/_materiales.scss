@@ -44,7 +44,7 @@
                         transition: box-shadow 100ms cubic-bezier(.2,0,.7,1), transform 100ms cubic-bezier(.2,0,.7,1); 
                     }
                     .cajaTransicion:hover {
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                         box-shadow: 0 0 1px 10px rgba(#b4018d, 0.3),
                         
                     }
@@ -223,9 +223,20 @@
     
 /*RESPONSIVE 1200****************************************************************************************************/
 @media screen and (max-width:1200px){
-    .CajaMatPrima{
+    .cajaMatPrima{
         margin-top: 5%;
-    }
+        nav{
+            .nav-tabs{
+                .nav-link{
+                    margin: 8px;
+                    .cajaTransicion{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }    
 }
 /*RESPONSIVE 768*****************************************************************************************************/
 @media screen and (max-width:768px){
@@ -234,6 +245,13 @@
         padding-bottom: 3.5%;
         margin-left: 5%;
         margin-right: 5%;
+        nav{
+            .nav-tabs{
+                .nav-link{
+                    margin: 10px;
+                }
+            }
+        }  
     }
     section.contenedorStock{
         margin-bottom: 5%;
