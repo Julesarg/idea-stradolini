@@ -56,7 +56,7 @@ main{
                     display:flex;
                     justify-content: center;
                     margin-top: 1.2vw;
-                    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+                    background:$gradienteppal;
                     border-radius: 10px;
                     height: auto;
                     margin-right: 50px;
@@ -89,7 +89,7 @@ main{
                     display:flex;
                     justify-content: center;
                     margin-top: 1.2vw;
-                    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+                    background:$gradienteppal;
                     border-radius: 10px;
                     height: auto;
                     margin-right: 30px;
@@ -122,7 +122,7 @@ main{
                     display:flex;
                     justify-content: center;
                     margin-top: 1.2vw;
-                    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+                    background:$gradienteppal;
                     border-radius: 10px;
                     height: auto;
                     transition: .3s;                   
@@ -191,7 +191,7 @@ main{
 }
 /*BARRA DE NAVEGACION************************************/
 .navegacion{
-    background:linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    background:$gradienteppal;
     width: 100%;
 }
 #hamburguesa{
@@ -296,7 +296,6 @@ p{
 footer{
     display: flex;
     flex-direction: column;
-    background:linear-gradient(90deg, #d85b8c 25%,#d44d7d 75%);
     .cajaGde{
         display: flex;
         flex-direction: row;
@@ -387,7 +386,7 @@ footer{
                     }
                     .footerImgRedes:hover{
                         opacity: 1;
-                        transform: scale(1.2,1.2);
+                        transform: scale(1.2,1.2);                        
                     }
                 }
             }
