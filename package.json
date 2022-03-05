@@ -1,10 +1,10 @@
 {
   "name": "root",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">\r   <img src=\"https://github.com/Julesarg/idea-stradolini/blob/main/images/readmeimg.jpg\"/>\r </p>",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss/style.scss css/style.css"
+    "compile:sass": "sass --watch scss/style.scss css/style.css"    
   },
   "repository": {
     "type": "git",
